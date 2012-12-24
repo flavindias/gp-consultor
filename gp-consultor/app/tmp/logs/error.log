@@ -69,3 +69,28 @@
 #1 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2012-12-24 17:13:08 Error: [MissingActionException] Action ConsultantsController::view() could not be found.
+#0 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-24 17:20:20 Error: [MissingActionException] Action ConsultantsController::display() could not be found.
+#0 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-12-24 17:28:11 Error: [MissingControllerException] Controller class HomeController could not be found.
+#0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-24 17:29:35 Error: [MissingControllerException] Controller class ConsultoresController could not be found.
+#0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-24 17:29:47 Error: [MissingControllerException] Controller class ConsultoresController could not be found.
+#0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-24 17:29:51 Error: [MissingControllerException] Controller class ConsultoresController could not be found.
+#0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-24 17:30:06 Error: [MissingControllerException] Controller class ConsultoresController could not be found.
+#0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
