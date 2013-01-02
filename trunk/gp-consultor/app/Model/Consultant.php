@@ -8,5 +8,6 @@
  
  class Consultant extends AppModel{
  	public $name = 'Consultant';
+ 	var $hasOne = array('Address');
  }
 ?>
