@@ -10,7 +10,11 @@
     </head>
 
     <body>
-        
+
+        <div id="bt-cadastrar">
+            <a href="/add">Cadastrar Consultor</a>
+        </div>
+
 		<div id="Menu_Home">
 			<a href="#" id="botao_home"><img src="./img/botao_home.png" alt="" ></a>
 			<ul>
