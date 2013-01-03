@@ -2,6 +2,7 @@
          as informa��es dos posts -->
 
     <?php foreach ($consultants as $consul): ?>
+    	<?php if ($consul['Consultant']['removed'] == false) { ?>
 		<li>	
 			<ul class="line">
 				<li class="nome"><?php echo $this->Html->link($consul['Consultant']['name'],array('controller' => 'Consultants', 'action' => 'view', $consul['Consultant']['id'])); ?></li>
@@ -20,6 +21,6 @@
 			</ul>
 		</li>
 
-    <?php endforeach; ?>
+    <?php } endforeach; ?>
 
 </table>
