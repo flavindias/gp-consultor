@@ -14,7 +14,7 @@
  	
  	
  	public function index(){
- 		$this -> layout = 'viewConsultant';
+ 		$this -> layout = 'listagem';
  		$this -> set ('consultants', $this-> Consultant->find('all'));
  	}
  	
@@ -27,6 +27,24 @@
             $this->Session->setFlash('O usuário foi adicionado com sucesso!');
             $this->redirect(array('action' => 'index'));
          } }
+   }
+   public function editar($id = NULL)
+   {
+   	$this->User->id = $id;
+   	if(!$this->User->exists())
+	{
+      throw new NotFoundException("Usuário não encontrado!");
+	}
+	if($this->request->is('post') || $this->request->is('put'))
+	{
+      if($this->User->save($this->request->data))
+      {
+         $this->Session->setFlash('O usuário foi editado com sucesso!');
+         $this->redirect(array('action' => 'index'));
+      } else {
+         $this->Session->setFlash('O usuário não foi editado. Tente novamente.');
+      }
+	}
    }
  	
  }
