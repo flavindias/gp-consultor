@@ -30,8 +30,8 @@
    }
    public function editar($id = NULL)
    {
-   	$this->User->id = $id;
-   	if(!$this->User->exists())
+   	$this->Consultant->id = $id;
+   	if(!$this->Consultant->exists())
 	{
       throw new NotFoundException("Usuário não encontrado!");
 	}
