@@ -12,7 +12,7 @@
     <body>
 
         <div id="bt-cadastrar">
-            <a class="botao" href="consultants/add">Cadastrar</a>
+            <?php echo $this->Html->link("Cadastrar", array('action' => 'add'),array('class'=>'botao')); ?>
         </div>
 
 		<div id="Menu_Home">

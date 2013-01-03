@@ -1127,3 +1127,61 @@
 2013-01-03 21:52:20 Error: [MissingControllerException] Controller class AddController could not be found.
 #0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-03 22:10:40 Error: [MissingControllerException] Controller class RecipesController could not be found.
+#0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-04 00:04:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-04 00:04:59 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO), expecting ')' in [C:\Sites\sws\app\View\Consultants\index.ctp, line 13]
+2013-01-04 00:04:59 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+#0 C:\Sites\sws\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Sites\sws\ap...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Sites\sws\ap...', 13, Array)
+#2 C:\Sites\sws\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Sites\sws\ap...', 13, Array)
+#3 C:\Sites\sws\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-04 00:05:07 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Sites\sws\app\View\Consultants\index.ctp, line 13]
+2013-01-04 00:05:07 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 C:\Sites\sws\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Sites\sws\ap...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Sites\sws\ap...', 13, Array)
+#2 C:\Sites\sws\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Sites\sws\ap...', 13, Array)
+#3 C:\Sites\sws\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-04 00:05:19 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\Sites\sws\app\View\Consultants\index.ctp, line 13]
+2013-01-04 00:05:19 Error: [FatalErrorException] syntax error, unexpected '<'
+#0 C:\Sites\sws\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Sites\sws\ap...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Sites\sws\ap...', 13, Array)
+#2 C:\Sites\sws\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Sites\sws\ap...', 13, Array)
+#3 C:\Sites\sws\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-04 00:07:00 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-04 00:08:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-04 00:08:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-04 00:08:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-04 00:10:23 Error: [MissingActionException] Action Consultants::x() could not be found.
+#0 C:\Sites\sws\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-01-04 00:10:23 Error: [MissingActionException] Action Consultants::x() could not be found.
+#0 C:\Sites\sws\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
