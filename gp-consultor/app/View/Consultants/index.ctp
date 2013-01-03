@@ -11,11 +11,11 @@
 				<li class="tel"><?php echo $consul['Consultant']['phone2']; ?></li>
 				<li class="cor" style="background-color: <?php echo $consul['Consultant']['acronym_color']; ?> "><?php echo $consul['Consultant']['acronym_color']; ?></li>
 				<li class="editar"><?php echo $this->Html->link(
-				$this->Html->image("edit.png", array("alt" => "Editar")),'edit',
+				$this->Html->image("edit.png", array("alt" => "Editar")),'edit/'.$consul['Consultant']['id'],
 				array('escape'=>false))?></li>
 				<li class="remover"><?php echo $this->Html->link(
-				$this->Html->image("delete.png", array("alt" => "Editar")),
-				array('controller' => 'recipes', 'action' => 'delete', 0),
+				$this->Html->image("delete.png", array("alt" => "Deletar")),
+				array('action' => 'delete', $consul['Consultant']['id']),
 				array('escape'=>false),"Você quer excluir realmente ?");?></li>
 			</ul>
 		</li>
