@@ -1,16 +1,17 @@
 //Quando o documento (pagina) estiver Ready(carregado) ele chama as funções
 $('document').ready(function(){
 	//Ai clicar no em botao_home ...
+	var flag = false;
 	$('#botao_home').click(function(e){
 		//O menu_home sofre uma animação no margin-left
-		flag = false;
+		
 		if (flag==false){
 			$('#Menu_Home').animate({'margin-left':'-10px'});	
 			flag = true;
 		}
 		else{
 			$('#Menu_Home').animate({'margin-left':'-150px'});	
-			flag =false
+			flag =false;
 		}		
 	});
 	//Ao clicar na div Menu_Home ...
@@ -25,6 +26,7 @@ $('document').ready(function(){
 	//Ao clicar no resto da pagina no caso, na tag HTML...
 	$('html').click(function(){
 		//O menu_home volta para o lugar de origem
+		flag = false;
 		$('#Menu_Home').animate({'margin-left':'-150px'});	
 	});
 
