@@ -29,21 +29,15 @@
          } }
    }
    public function edit($id = NULL){
-   	$this->Consultant->id = $id;
-   	if(!$this->Consultant->exists())
-	{
-      throw new NotFoundException("Usuário não encontrado!");
-	}
-	if($this->request->is('post') || $this->request->is('put'))
-	{
-      if($this->User->save($this->request->data))
-      {
-         $this->Session->setFlash('O usuário foi editado com sucesso!');
-         $this->redirect(array('action' => 'index'));
-      } else {
-         $this->Session->setFlash('O usuário não foi editado. Tente novamente.');
-      }
-	}
+		 $this->Consultant->id = $id;
+		if ($this->request->is('get')) {
+			$this->request->data = $this->Consultant->read();
+		} else {
+			if ($this->Consultant->save($this->request->data)) {
+				$this->Session->setFlash('Your post has been updated.');
+				$this->redirect(array('action' => 'index'));
+			}
+		}
    }
  	
  }
