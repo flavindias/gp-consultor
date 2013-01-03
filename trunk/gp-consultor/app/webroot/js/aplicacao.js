@@ -3,7 +3,15 @@ $('document').ready(function(){
 	//Ai clicar no em botao_home ...
 	$('#botao_home').click(function(e){
 		//O menu_home sofre uma animação no margin-left
-		$('#Menu_Home').animate({'margin-left':'-10px'});		
+		flag = false;
+		if (flag==false){
+			$('#Menu_Home').animate({'margin-left':'-10px'});	
+			flag = true;
+		}
+		else{
+			$('#Menu_Home').animate({'margin-left':'-150px'});	
+			flag =false
+		}		
 	});
 	//Ao clicar na div Menu_Home ...
 	$('#Menu_Home').click(function(e){
