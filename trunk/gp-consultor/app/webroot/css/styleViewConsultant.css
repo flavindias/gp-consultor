@@ -102,7 +102,7 @@ ul.table{
     list-style-type: none;
 	display:table;
 	width:98%;
-	margin-left:2%;
+	margin-left:5%;
 }
 
 ul.line{
@@ -114,6 +114,7 @@ ul.line{
 }
 
 ul.line li{
+	font-size: 14px;
     margin: 2px;
     background-color: #C0D9D9;
     color: black;
@@ -122,7 +123,7 @@ ul.line li{
     padding-left: 0px; 
     float: left;
     padding-bottom: 10px; 
-    width: 10%; 
+    width: 7%; 
     padding-top: 10px 
 
 }
