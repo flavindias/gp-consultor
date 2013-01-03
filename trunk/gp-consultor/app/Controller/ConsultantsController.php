@@ -28,11 +28,7 @@
             $this->redirect(array('action' => 'index'));
          } }
    }
-   public function edit($id = NULL)
-<<<<<<< .mine   
-   public function edit($id = NULL)
-=======   public function edit($id = NULL)
->>>>>>> .theirs   {
+   public function edit($id = NULL){
    	$this->Consultant->id = $id;
    	if(!$this->Consultant->exists())
 	{
