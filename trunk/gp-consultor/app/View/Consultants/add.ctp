@@ -7,16 +7,16 @@
 					
 					<?php echo $this->Form->input('Consultant.name', array('label' => 'Nome: ','placeholder'=>'')); ?>
 					<?php echo $this->Form->input('Consultant.cpf', array('label' => 'CPF: ','placeholder'=>'')); ?>
-					<?php echo $this->Form->input('Consultant.acronym', array('label' => 'Abreviação do Nome: ','placeholder'=>'Abreviação ')); ?>
+					<?php echo $this->Form->input('Consultant.acronym', array('label' => 'AbreviaÃ§Ã£o do Nome: ')); ?>
 					<?php echo $this->Form->input('Consultant.acronym_color', array('type'=> 'color','label' => 'Cor: ')); ?>
 					<?php echo $this->Form->input('Consultant.phone1', array('label' => 'Telefone: ')); ?>
 					<?php echo $this->Form->input('Consultant.phone2', array('label' => 'Celular: ')); ?>
 					<?php echo $this->Form->input('Consultant.email', array('label' => 'E-mail: ')); ?>					
 			</fieldset>
-			<fieldset id="endereço">
-				<legend>Endereço</legend>
-					<?php echo $this->Form->input('Address.address', array('label' => 'Endereço: ')); ?>
-					<?php echo $this->Form->input('Address.number', array('label' => 'Número: ')); ?>
+			<fieldset id="endereÃ§o">
+				<legend>EndereÃ§o</legend>
+					<?php echo $this->Form->input('Address.address', array('label' => 'EndereÃ§o: ')); ?>
+					<?php echo $this->Form->input('Address.number', array('label' => 'NÃºmero: ')); ?>
 					<?php echo $this->Form->input('Address.complement', array('label' => 'Complemento: ')); ?>
 					<?php echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro: ')); ?>
 					<?php echo $this->Form->input('Address.city', array('label' => 'Cidade: ')); ?>
@@ -56,12 +56,12 @@
 	
 			</fieldset>
 			<fieldset>
-				<legend>Dados Bancários</legend>
+				<legend>Dados Bancï¿½rios</legend>
 				<form>
 					<label for="nome_banco">Nome do Banco:</label><br>
 					<input name="nome_banco" type="text" required><br>
 	
-					<label for="agencia">Agência:</label><br>
+					<label for="agencia">Agï¿½ncia:</label><br>
 					<input name="agencia" type="text" required><br>
 				</form>
 	
