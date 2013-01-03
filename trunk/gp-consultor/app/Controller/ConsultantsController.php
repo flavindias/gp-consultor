@@ -20,6 +20,7 @@
  	
  	public function add()
    {
+   	  $this -> layout = 'AddConsultant';
       if($this->request->is('post'))
       {
          if($this->Consultant->saveAll($this->request->data))
