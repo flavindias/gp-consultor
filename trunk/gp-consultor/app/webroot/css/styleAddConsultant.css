@@ -1,24 +1,6 @@
-#Menu_Home{
-	position: fixed;
-	left: -20px;
-	top: 10px;
-	background-color: #010101;
-	opacity: 0.65;
-	width: 45px;
-	height: 45px;
-	border-radius: 20px;
-	
-}
-#Menu_Home:hover{
-	background-color: #020202;
-	
-
-}
 
 body{
-	padding-left: 10%;
 	top: auto;
-	left: auto;
 	font-family: sans-serif;
 	background-color: #1fa0b7;
 	line-height: 24px;
@@ -48,3 +30,83 @@ select{
 legend{
 	font-size: 22px;
 }
+
+h1 {
+	clear:both;
+    color: #FFF; 
+	/*alterado*/
+	padding-top: 14px;
+    padding-bottom: 10px;
+	//margin-left:70px;
+	margin-bottom: 20px;
+	border-bottom:3px solid #FFF;
+	/*end*/
+}
+.conteudo {
+	position: absolute;
+	width: 1000px;
+	left:50%;
+	margin-left:-500px;
+	padding-bottom:60px;
+}
+
+ /* ===================== 
+===========Menu principal 
+========================*/
+
+#Menu_Home{
+    background-color: #010101;
+	opacity:0.85;
+	/*alterado*/
+	border-radius: 0px 22px 22px 0px ;
+	-webkit-border-radius: 0px 22px 22px 0px ;
+	-moz-border-radius: 0px 22px 22px 0px ;
+	padding:10px 0px 10px 0px;
+    margin-left: -150px;
+	position:fixed;
+    height: 100%;
+	/*end*/
+}
+#Menu_Home ul  {
+	margin-top:10px;
+	padding:0px 20px;
+}
+#Menu_Home ul li{
+	list-style:none;
+	color:#FFF;
+	opacity:1;
+	
+}
+#Menu_Home ul li a{
+	text-decoration:none;
+	opacity:1 !important;
+	color:#000;
+	display:block;
+	padding:10px 20px;
+	margin-top:10px;
+	background-color:#E4E4E4;
+	
+}
+
+#botao_home {
+	margin-left:130px;
+	position:absolute;
+	background-color: #010101;
+	display:block;
+	padding:10px 10px 10px 20px;
+	border-radius: 0px 22px 22px 0px ;
+	-webkit-border-radius: 0px 22px 22px 0px ;
+	-moz-border-radius: 0px 22px 22px 0px ;
+}
+
+#bt-cadastrar{
+	 margin:-20px;
+	 float: right;
+	 background-color:#1fa0b7;
+	 padding:5px 5px;
+	 margin-right: 5px;
+}
+
+
+/*end menu principal*/
+
