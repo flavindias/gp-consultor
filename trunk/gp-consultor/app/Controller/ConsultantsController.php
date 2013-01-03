@@ -25,19 +25,28 @@
       {
          if($this->Consultant->saveAll($this->request->data))
          {
-            $this->Session->setFlash('O usuário foi adicionado com sucesso!');
+            $this->Session->setFlash('O usuário foi adicionado.');
             $this->redirect(array('action' => 'index'));
          } }
    }
-   public function edit($id = NULL){
+   public function edit($id = NULL)
+   {
 		 $this->Consultant->id = $id;
 		if ($this->request->is('get')) {
 			$this->request->data = $this->Consultant->read();
 		} else {
 			if ($this->Consultant->save($this->request->data)) {
-				$this->Session->setFlash('Your post has been updated.');
+				$this->Session->setFlash('Consultor foi editado.');
 				$this->redirect(array('action' => 'index'));
 			}
+		}
+   }
+   public function delete($id = NULL)
+   {
+		$this->Consultant->id = $id;
+		if($this->Consultant->saveField("removed", "true")){
+			$this->Session->setFlash('Consultor foi deletado.');
+			$this->redirect(array('action' => 'index'));
 		}
    }
  	
