@@ -14,7 +14,7 @@
  	
  	
  	public function index(){
- 		$this -> layout = 'listagem';
+ 		$this -> layout = 'viewConsultant';
  		$this -> set ('consultants', $this-> Consultant->find('all'));
  	}
  	
@@ -29,7 +29,10 @@
          } }
    }
    public function edit($id = NULL)
-   {
+<<<<<<< .mine   
+   public function edit($id = NULL)
+=======   public function edit($id = NULL)
+>>>>>>> .theirs   {
    	$this->Consultant->id = $id;
    	if(!$this->Consultant->exists())
 	{
