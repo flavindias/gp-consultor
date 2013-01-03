@@ -4,19 +4,19 @@
     
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <?php echo $this->Html->css('styleViewConsultant'); ?>
-		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="js/aplicacao.js"></script>
+		<?php echo $this->Html->css('styleAddConsultant'); ?>
+		<?php echo $this->Html->script('jquery-1.7.1.min'); ?>
+		<?php echo $this->Html->script('aplicacao'); ?>
     </head>
 
     <body>
 
         <div id="bt-cadastrar">
-            <a class="botao" text-decoration:none color:#FFFFFF href="consultants/add">Cadastrar</a>
+            <a class="botao" href="consultants/add">Cadastrar</a>
         </div>
 
 		<div id="Menu_Home">
-			<a href="#" id="botao_home"><img src="./img/botao_home.png" alt="" ></a>
+			<a href="#" id="botao_home"><?php echo $this->Html->image('botao_home.png', array('alt' => ''))?></a>
 			<ul>
 				<li><a href="">Consultor</a></li>
 				<li><a href="">Empresa</a></li>
