@@ -56,11 +56,11 @@
 }
 
 .botao{
+	 text-decoration:none;
+	 color:#000
 	 display: inline-block;
-  	 height:5px;
-  	 width: 100px;
  	 padding: 15px 15px;
-  	 font:normal 11px/1.1em arial;
+  	 font:normal 20px/1.1em arial;
   	 border:1px solid #d0d0d0;
   	 border-top-color:#ececec;
   	 border-bottom-color:#909090;
@@ -84,9 +84,10 @@ h1 {
 	clear:both;
     color: #FFF; 
 	/*alterado*/
+	padding-top: 14px;
     padding-bottom: 10px;
 	margin-left:70px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	border-bottom:3px solid #FFF;
 	/*end*/
 }
