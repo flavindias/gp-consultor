@@ -1,0 +1,50 @@
+#Menu_Home{
+	position: fixed;
+	left: -20px;
+	top: 10px;
+	background-color: #010101;
+	opacity: 0.65;
+	width: 45px;
+	height: 45px;
+	border-radius: 20px;
+	
+}
+#Menu_Home:hover{
+	background-color: #020202;
+	
+
+}
+
+body{
+	padding-left: 10%;
+	top: auto;
+	left: auto;
+	font-family: sans-serif;
+	background-color: #1fa0b7;
+	line-height: 24px;
+
+
+}
+fieldset{
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	color: white;
+	width: 420px;
+	border: 30px;
+	border-color: #FFFFFF;
+	background-color: #2fb2c8;
+
+}
+input{
+	width: 400px;
+	height: 20px;
+}
+select{
+	width: 400px;
+	height: 20px;
+	background-color: #FFFFFF;
+}
+legend{
+	font-size: 22px;
+}
