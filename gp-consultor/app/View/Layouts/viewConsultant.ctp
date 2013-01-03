@@ -12,7 +12,7 @@
     <body>
 
         <div id="bt-cadastrar">
-            <a class="botao" text-decoration:none color:#FFFFFF href="/add">Cadastrar Consultor</a>
+            <a class="botao" text-decoration:none color:#FFFFFF href="consultants/add">Cadastrar</a>
         </div>
 
 		<div id="Menu_Home">
