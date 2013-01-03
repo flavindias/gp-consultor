@@ -9,6 +9,8 @@
 			echo $this->Form->input('Consultant.acronym_color');
 			echo $this->Form->input('Address.address');
 			echo $this->Form->input('Address.number');	
+			echo $this->Form->end('Save Post');
         ?>
     </fieldset>
+</div>
   
