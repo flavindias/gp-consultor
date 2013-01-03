@@ -14,7 +14,7 @@
  	
  	
  	public function index(){
- 		$this -> layout = 'listagem';
+ 		$this -> layout = 'viewConsultant';
  		$this -> set ('consultants', $this-> Consultant->find('all'));
  	}
  	

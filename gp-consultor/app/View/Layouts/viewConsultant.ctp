@@ -34,18 +34,7 @@
                         <li class="remover"><b>Remover</b></li>
                     </ul>
                 </li>
-                <li>
-                    <ul class="line">
-                        <li class="nome">Marcela Soares Domingues</li>
-                        <li class="cpf">123.123.434-24</li>
-                        <li class="email">marcela.domingues@gmail.com</li>
-                        <li class="tel">8832-3123</li>
-                        <li class="tel">9283-3232</li>
-                        <li class="cor">Cor</li>
-                        <li class="editar"><a href=""><img src="./img/edit.png" alt="Editar consultor" id="edit"></a></li>
-                        <li class="remover"><a href=""><img src="./img/delete.png" alt="Remover consultor" id="delete"></a></li>
-                    </ul>
-                </li>
+				<?php echo $this->fetch('content'); ?>
             </ul>
 
         </div>
