@@ -28,7 +28,7 @@
             $this->redirect(array('action' => 'index'));
          } }
    }
-   public function editar($id = NULL)
+   public function edit($id = NULL)
    {
    	$this->Consultant->id = $id;
    	if(!$this->Consultant->exists())
