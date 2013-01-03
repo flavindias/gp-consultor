@@ -1060,3 +1060,67 @@
 #4 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
 #5 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2013-01-03 21:24:02 Error: [MissingActionException] Action Consultants::img() could not be found.
+#0 C:\Sites\sws\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-01-03 21:24:02 Error: [MissingActionException] Action Consultants::img() could not be found.
+#0 C:\Sites\sws\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-01-03 21:24:53 Error: [MissingActionException] Action Consultants::img() could not be found.
+#0 C:\Sites\sws\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-01-03 21:24:53 Error: [MissingActionException] Action Consultants::img() could not be found.
+#0 C:\Sites\sws\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-01-03 21:24:54 Error: [MissingActionException] Action Consultants::consultants() could not be found.
+#0 C:\Sites\sws\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-01-03 21:25:02 Error: [MissingActionException] Action Consultants::img() could not be found.
+#0 C:\Sites\sws\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-01-03 21:25:02 Error: [MissingActionException] Action Consultants::img() could not be found.
+#0 C:\Sites\sws\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-01-03 21:25:08 Error: [MissingActionException] Action Consultants::consultants() could not be found.
+#0 C:\Sites\sws\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

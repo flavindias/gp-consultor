@@ -9,7 +9,7 @@
 				<li class="email"><?php echo $consul['Consultant']['email']; ?></li>
 				<li class="tel"><?php echo $consul['Consultant']['phone1']; ?></li>
 				<li class="tel"><?php echo $consul['Consultant']['phone2']; ?></li>
-				<li class="cor"><?php echo $consul['Consultant']['acronym_color']; ?></li>
+				<li class="cor" style="background-color: <?php echo $consul['Consultant']['acronym_color']; ?> "><?php echo $consul['Consultant']['acronym_color']; ?></li>
 				<li class="editar"><a href=""><img src="./img/edit.png" alt="Editar consultor" id="edit"></a></li>
 				<li class="remover"><a href=""><img src="./img/delete.png" alt="Remover consultor" id="delete"></a></li>
 			</ul>
