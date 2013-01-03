@@ -9,8 +9,13 @@
 			echo $this->Form->input('Consultant.acronym_color');
 			echo $this->Form->input('Address.address');
 			echo $this->Form->input('Address.number');	
-			echo $this->Form->end('Save Post');
         ?>
     </fieldset>
+    <?php echo $this->Form->end('ENVIAR'); ?>
 </div>
-  
+<div class="actions">
+    <h3>Actions</h3>
+    <ul>
+        <li><?php echo $this->Html->link('Listar', array('action' => 'index')); ?></li>
+    </ul>
+</div>
