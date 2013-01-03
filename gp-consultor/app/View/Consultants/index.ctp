@@ -1,5 +1,5 @@
-    <!-- Aqui é onde nós percorremos nossa matriz $consultants, imprimindo
-         as informações dos posts -->
+    <!-- Aqui ï¿½ onde nï¿½s percorremos nossa matriz $consultants, imprimindo
+         as informaï¿½ï¿½es dos posts -->
 
     <?php foreach ($consultants as $consul): ?>
 		<li>	
@@ -10,10 +10,16 @@
 				<li class="tel"><?php echo $consul['Consultant']['phone1']; ?></li>
 				<li class="tel"><?php echo $consul['Consultant']['phone2']; ?></li>
 				<li class="cor" style="background-color: <?php echo $consul['Consultant']['acronym_color']; ?> "><?php echo $consul['Consultant']['acronym_color']; ?></li>
-				<li class="editar"><a href=""><img src="./img/edit.png" alt="Editar consultor" id="edit"></a></li>
-				<li class="remover"><a href=""><img src="./img/delete.png" alt="Remover consultor" id="delete"></a></li>
+				<li class="editar"><?php echo $this->Html->link(
+				$this->Html->image("edit.png", array("alt" => "Editar")),'edit',
+				array('escape'=>false))?></li>
+				<li class="remover"><?php echo $this->Html->link(
+				$this->Html->image("delete.png", array("alt" => "Editar")),
+				array('controller' => 'recipes', 'action' => 'delete', 0),
+				array('escape'=>false),"VocÃª quer excluir realmente ?");?></li>
 			</ul>
 		</li>
+
     <?php endforeach; ?>
 
 </table>
