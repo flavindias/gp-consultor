@@ -20,18 +20,19 @@
  	
  	public function add()
    {
-   	  $this -> layout = 'AddConsultant';
+   	  $this -> layout = 'base';
       if($this->request->is('post'))
       {
          if($this->Consultant->saveAll($this->request->data))
          {
-            $this->Session->setFlash('O usuário foi adicionado.');
+            $this->Session->setFlash('O usuï¿½rio foi adicionado.');
             $this->redirect(array('action' => 'index'));
          } }
    }
    public function edit($id = NULL)
    {
-		 $this->Consultant->id = $id;
+		$this->layout = 'base';
+		$this->Consultant->id = $id;
 		if ($this->request->is('get')) {
 			$this->request->data = $this->Consultant->read();
 		} else {

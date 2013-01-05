@@ -11,13 +11,12 @@
 	<div id="Menu_Home">
 		<a href="#" id="botao_home"><?php echo $this->Html->image('botao_home.png', array('alt' => ''))?></a>
 		<ul>
-			<li><a href="">Consultor</a></li>
+			<li><?php echo $this->Html->link('Consultor', array('action' =>'../consultants'));?></li>
 			<li><a href="">Empresa</a></li>
 		</ul>
 	</div>
 	
 	<div class="conteudo">
-		<h1>Cadastrar Consultor</h1>
 		<?php echo $this->fetch('content'); ?>
 	</div>
 </body>
