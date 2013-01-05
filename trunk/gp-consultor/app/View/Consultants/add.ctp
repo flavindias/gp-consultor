@@ -1,5 +1,5 @@
 
-
+<h1>Cadastrar Consultor</h1>
 <?php //provavelmente na view add, ou o equivalente para adicionar a pessoa
 		echo $this->Form->create('Consultant', array('action' => 'add')); ?>
 			<fieldset id="dados_pessoais">
@@ -21,7 +21,7 @@
 					<?php echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro: ')); ?>
 					<?php echo $this->Form->input('Address.city', array('label' => 'Cidade: ')); ?>
 					<?php echo $this->Form->input('Address.state', array('label' => 'Estado: ')); ?>
-					<?php echo $this->Form->input('Address.code_zip', array('label' => 'CEP: ')); ?>
+					<?php echo $this->Form->input('Address.zip_code', array('label' => 'CEP: ')); ?>
 			</fieldset>
 			<?php echo $this->Form->end('Confirmar Cadastro'); ?>
 		</form>
