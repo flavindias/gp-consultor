@@ -50,6 +50,11 @@
 			$this->redirect(array('action' => 'index'));
 		}
    }
+   
+   public function view($id = null) {
+        $this->Consultant->id = $id;
+        $this->set('consultants', $this->Consultant->read());
+    }
  	
  }
 ?>
