@@ -1,9 +1,9 @@
-//Quando o documento (pagina) estiver Ready(carregado) ele chama as funções
+//Quando o documento (pagina) estiver Ready(carregado) ele chama as funï¿½ï¿½es
 $('document').ready(function(){
 	//Ai clicar no em botao_home ...
 	var flag = false;
 	$('#botao_home').click(function(e){
-		//O menu_home sofre uma animação no margin-left
+		//O menu_home sofre uma animaï¿½ï¿½o no margin-left
 		
 		if (flag==false){
 			$('#Menu_Home').animate({'margin-left':'-10px'});	
@@ -16,10 +16,10 @@ $('document').ready(function(){
 	});
 	//Ao clicar na div Menu_Home ...
 	$('#Menu_Home').click(function(e){
-		//Usa-se essa função 'stopPropagation();' para que não seje disparado a função para a div voltar para o lugar de origem
+		//Usa-se essa funï¿½ï¿½o 'stopPropagation();' para que nï¿½o seje disparado a funï¿½ï¿½o para a div voltar para o lugar de origem
 		//Pois, quando se clica em uma elemento, ele clica em todos que forem pais dele.
-		// Se eu tiver '<div><a></a></div>', e tenho um alert ao clicar na div....se eu clica na tag <a>, a função com o alert sera disparado,
-		//Para evitar isto, faço uma função que ao clicar no <a>, ele chama a função stopPropagation, que no caso vai pausar a propagação do clic nos elementos
+		// Se eu tiver '<div><a></a></div>', e tenho um alert ao clicar na div....se eu clica na tag <a>, a funï¿½ï¿½o com o alert sera disparado,
+		//Para evitar isto, faï¿½o uma funï¿½ï¿½o que ao clicar no <a>, ele chama a funï¿½ï¿½o stopPropagation, que no caso vai pausar a propagaï¿½ï¿½o do clic nos elementos
 		//Ficando somente no elemento que foi clicado realmente.
 		e.stopPropagation();
 	})
@@ -30,6 +30,6 @@ $('document').ready(function(){
 		$('#Menu_Home').animate({'margin-left':'-150px'});	
 	});
 
-	$("input[name=cpf]").mask("999.999.999-99");
+	$("#cpf").mask("999.999.999-99");
 
 });
