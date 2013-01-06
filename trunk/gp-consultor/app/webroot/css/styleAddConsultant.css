@@ -92,6 +92,7 @@ h1 {
 ===========Menu principal 
 ========================*/
 
+*{font-weight: 100;}
 #Menu_Home{
     background-color: #010101;
 	opacity:0.85;
@@ -100,7 +101,7 @@ h1 {
 	-webkit-border-radius: 0px 22px 22px 0px ;
 	-moz-border-radius: 0px 22px 22px 0px ;
 	padding:10px 0px 10px 0px;
-    margin-left: -150px;
+    margin-left: -165px;
 	position:fixed;
     height: 100%;
 	/*end*/
@@ -127,7 +128,7 @@ h1 {
 }
 
 #botao_home {
-	margin-left:130px;
+	margin-left:145px;
 	position:absolute;
 	background-color: #010101;
 	display:block;
