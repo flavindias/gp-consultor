@@ -1,9 +1,11 @@
+*{font-weight: 100;}
 
 body{
 	top: auto;
-	font-family: sans-serif;
+	font-family: Verdana;
 	background-color: #1fa0b7;
 	line-height: 24px;
+	font-weight: 100;
 
 
 }
@@ -29,6 +31,13 @@ select{
 }
 legend{
 	font-size: 22px;
+}
+h2 {
+	color:#CCC;
+}
+p span {
+	font-weight: 600;
+	font-size: 80%;
 }
 
 h1 {
