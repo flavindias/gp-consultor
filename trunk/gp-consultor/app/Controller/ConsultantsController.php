@@ -25,7 +25,7 @@
       {
          if($this->Consultant->saveAll($this->request->data))
          {
-            $this->Session->setFlash('O usu�rio foi adicionado.');
+            $this->Session->setFlash('O usuário foi adicionado.');
             $this->redirect(array('action' => 'index'));
          } }
    }
