@@ -18,6 +18,19 @@
  		$this -> set ('consultants', $this-> Consultant->find('all'));
  	}
  	
+ 	public function view($id = null){
+ 		 if (!$id) {
+            throw new NotFoundException(__('Invalid post'));
+        }
+ 		$this -> layout = 'base';
+ 		$consultant =  $this->Consultant->findById($id);
+ 		 if (!$consultant) {
+            throw new NotFoundException(__('Invalid post'));
+        }
+        
+        $this ->set('consultant',$consultant);
+ 	}
+ 	
  	public function add()
    {
    	  $this -> layout = 'base';
@@ -50,11 +63,6 @@
 			$this->redirect(array('action' => 'index'));
 		}
    }
-   
-   public function view($id = null) {
-        $this->Consultant->id = $id;
-        $this->set('consultants', $this->Consultant->read());
-    }
  	
  }
 ?>

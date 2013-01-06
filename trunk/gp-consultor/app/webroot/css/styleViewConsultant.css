@@ -1,7 +1,7 @@
  /* ===================== 
 ===========Menu principal 
 ========================*/
-
+*{font-weight: 100;}
 #Menu_Home{
     background-color: #010101;
 	opacity:0.85;
