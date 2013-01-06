@@ -30,4 +30,6 @@ $('document').ready(function(){
 		$('#Menu_Home').animate({'margin-left':'-150px'});	
 	});
 
+	$("input[name=cpf]").mask("999.999.999-99");
+
 });
