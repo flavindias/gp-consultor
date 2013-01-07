@@ -34,9 +34,9 @@
                         <li class="tel"><b>Telefone 1</b></li>
                         <li class="tel"><b>Telefone 2</b></li>
                         <li class="cor"><b>Cor/Sigla</b></li>
+                        <li class="visualizar"><b>Visualizar</b></li>
                         <li class="editar"><b>Editar</b></li>
                         <li class="remover"><b>Remover</b></li>
-                        <li class="visualizar"><b>Visualizar</b></li>
                     </ul>
                 </li>
 				<?php echo $this->fetch('content'); ?>
