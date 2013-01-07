@@ -43,7 +43,7 @@
             </ul>
 
         </div>
-		<span id="click">teste</span>
+
     </body>
 
 

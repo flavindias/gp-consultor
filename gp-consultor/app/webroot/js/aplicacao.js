@@ -30,27 +30,14 @@ $('document').ready(function(){
 		$('#Menu_Home').animate({'margin-left':'-150px'});	
 	});
 
+	
+	//Mascaras
 	$("#cpf").mask("999.999.999-99");
 	$("#phone1").mask("(99)9999-9999");
 	$("#phone2").mask("(99)9999-9999");
 	$("#zip_code").mask("99.999-999");
-<<<<<<< .mine
-	
 
-	$('#zip_code').keypress(function(){
-		var cep = $(this).val();
-		var cep = cep.replace('-','');
-		cep = cep.replace('.','');
-		cep = cep.replace('_','');
-		var tamanho = cep.length;
-		
-		if (tamanho == 8 ){
-		  getEndereco();
-		}
-	});
-	
-=======
-
+	//Buscar Endereço ao digitar o dep
 	$('#zip_code').keypress(function(){
 		var cep = $(this).val();
 		cep = cep.replace('-','');
@@ -58,18 +45,19 @@ $('document').ready(function(){
 		cep = cep.replace('_','');
 		var tamanho = cep.length;
 		if(tamanho == 8){
+			//Função de buscar endereço pelo cep
 			getEndereco();
 		}
->>>>>>> .r52
-	 $('#click').click(function(){     
-		 alert('erick');
-                    //$.get(
-                      //  "/projeto/controllers/ajaxMsg",
-                        //null,
-                        //function(data) {   
-                         //   $("#msg").html(data);
-                        //}
-                    //); 
+	});
+
+	//Verificação	
+	 $('#name').click(function(){   
+		 
+                    $.get("ajaxMsg",null,
+                        function(data) {   
+                           $("body").append(data);
+                        }
+                    ); 
       });        
 
 

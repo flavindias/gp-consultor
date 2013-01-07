@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
- 
+	
  
     $("#cpf").blur(function () {
 
@@ -49,3 +49,5 @@ $(document).ready(function () {
             return false;
         }
     });
+    
+});

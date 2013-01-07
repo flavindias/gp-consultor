@@ -5,7 +5,7 @@
 			<fieldset id="dados_pessoais">
 				<legend>Dados Pessoais</legend>
 					
-					<?php echo $this->Form->input('Consultant.name', array('label' => 'Nome: ','required'=>'required', 'id'=>'name')); ?>
+					<?php echo $this->Form->input('Consultant.name', array('label' => 'Nome: ','required'=>'required', 'id'=>'name','html'=>'div')); ?>
 					<?php echo $this->Form->input('Consultant.cpf', array('label' => 'CPF: ','required'=>'required', 'id'=>'cpf')); ?>
 					<?php echo $this->Form->input('Consultant.acronym', array('label' => 'Abreviação do Nome: ','required'=>'required', 'id'=>'acronym')); ?>
 					<?php echo $this->Form->input('Consultant.acronym_color', array('type'=> 'color','label' => 'Cor: ','required'=>'required', 'id'=>'acronym_color')); ?>

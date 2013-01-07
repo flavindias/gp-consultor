@@ -85,6 +85,11 @@
         $result = str_replace($mask, "", $valor);
         return $result;
    }
+   
+   public function ajaxMsg(){
+   		$this->layout='ajax';
+   		$this->set('mensagem',' Ola Mundo');
+   }
  	
  }
 ?>
