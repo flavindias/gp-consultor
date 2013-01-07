@@ -34,6 +34,22 @@ $('document').ready(function(){
 	$("#phone1").mask("(99)9999-9999");
 	$("#phone2").mask("(99)9999-9999");
 	$("#zip_code").mask("99.999-999");
+<<<<<<< .mine
+	
+
+	$('#zip_code').keypress(function(){
+		var cep = $(this).val();
+		var cep = cep.replace('-','');
+		cep = cep.replace('.','');
+		cep = cep.replace('_','');
+		var tamanho = cep.length;
+		
+		if (tamanho == 8 ){
+		  getEndereco();
+		}
+	});
+	
+=======
 
 	$('#zip_code').keypress(function(){
 		var cep = $(this).val();
@@ -44,7 +60,20 @@ $('document').ready(function(){
 		if(tamanho == 8){
 			getEndereco();
 		}
-	})
+>>>>>>> .r52
+	 $('#click').click(function(){     
+		 alert('erick');
+                    //$.get(
+                      //  "/projeto/controllers/ajaxMsg",
+                        //null,
+                        //function(data) {   
+                         //   $("#msg").html(data);
+                        //}
+                    //); 
+      });        
+
+
+
 	
 	
 });
