@@ -46,10 +46,23 @@
    {
 		$this->layout = 'base';
 		$this->Consultant->id = $id;
+		if (!$id) {
+        	throw new NotFoundException(__('Invalid post'));
+	    }
+	
+	    $consult = $this->Consultant->findById($id);
+	    if (!$consult) {
+	        throw new NotFoundException(__('Invalid post'));
+	    }
+		
+		
 		if ($this->request->is('get')) {
 			$this->request->data = $this->Consultant->read();
-		} else {
-			if ($this->Consultant->save($this->request->data)) {
+		} 
+		else {
+			$this->Consultant->id = $id;
+			if ($this->Consultant->saveAll($this->request->data)) {
+				
 				$this->Session->setFlash('Consultor foi editado.');
 				$this->redirect(array('action' => 'index'));
 			}
