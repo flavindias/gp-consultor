@@ -8,6 +8,7 @@
 	<?php echo $this->Html->script('jquery-1.2.6.pack'); ?>
 	<?php echo $this->Html->script('jquery.maskedinput-1.1.4.pack'); ?>
 	<?php echo $this->Html->script('buscacep'); ?>
+	<?php echo $this->Html->script('validarcpf'); ?>
 
 	<?php echo $this->Html->script('aplicacao'); ?>
 </head>

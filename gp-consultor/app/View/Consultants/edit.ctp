@@ -15,15 +15,13 @@
 			</fieldset>
 			<fieldset id="endereço">
 				<legend>Endereço</legend>
-				<?php echo $this->Form->input('Address.id', array('type' => 'hidden')); ?>
-					<?php echo $this->Form->input('Address.address', array('label' => 'Endereço: ')); ?>
-					<?php echo $this->Form->input('Address.number', array('label' => 'Número: ')); ?>
-					<?php echo $this->Form->input('Address.complement', array('label' => 'Complemento: ')); ?>
-					<?php echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro: ')); ?>
-					<?php echo $this->Form->input('Address.city', array('label' => 'Cidade: ')); ?>
-					<?php echo $this->Form->input('Address.state', array('label' => 'Estado: ')); ?>
-					<?php echo $this->Form->input('Address.zip_code', array('label' => 'CEP: ', 'id' => 'zip_code')); ?>
-					
+				<?php echo $this->Form->input('Address.address', array('label' => 'Endereço: ','required'=>'required', 'id'=>'address')); ?>
+					<?php echo $this->Form->input('Address.number', array('label' => 'Número: ','required'=>'required')); ?>
+					<?php echo $this->Form->input('Address.complement', array('label' => 'Complemento: ','required'=>'required')); ?>
+					<?php echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro: ','required'=>'required','id'=>'neighborhood')); ?>
+					<?php echo $this->Form->input('Address.city', array('label' => 'Cidade: ','required'=>'required', 'id'=>'city')); ?>
+					<?php echo $this->Form->input('Address.state', array('label' => 'Estado: ','required'=>'required', 'id'=>'state')); ?>
+					<?php echo $this->Form->input('Address.zip_code', array('label' => 'CEP: ','required'=>'required', 'id'=>'zip_code')); ?>
 			</fieldset>
 			<?php echo $this->Form->end('Salvar Edição'); ?>
 		</form>
