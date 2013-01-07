@@ -9,8 +9,8 @@
 					<?php echo $this->Form->input('Consultant.cpf', array('label' => 'CPF: ','placeholder'=>'', 'id'=>'cpf')); ?>
 					<?php echo $this->Form->input('Consultant.acronym', array('label' => 'Abreviação do Nome: ', 'id'=>'acronym')); ?>
 					<?php echo $this->Form->input('Consultant.acronym_color', array('type'=> 'color','label' => 'Cor: ', 'id'=>'acronym_color')); ?>
-					<?php echo $this->Form->input('Consultant.phone1', array('label' => 'Telefone: ', 'id'=>'phone1')); ?>
-					<?php echo $this->Form->input('Consultant.phone2', array('label' => 'Celular: ', 'id'=>'phone2')); ?>
+					<?php echo $this->Form->input('Consultant.phone1', array('label' => 'Telefone: ')); ?>
+					<?php echo $this->Form->input('Consultant.phone2', array('label' => 'Celular: ')); ?>
 					<?php echo $this->Form->input('Consultant.email', array('label' => 'E-mail: ', 'id'=>'email')); ?>					
 			</fieldset>
 			<fieldset id="endereço">
