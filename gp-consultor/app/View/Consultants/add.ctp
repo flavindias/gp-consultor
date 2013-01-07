@@ -8,19 +8,19 @@
 					<?php echo $this->Form->input('Consultant.name', array('label' => 'Nome: ','required'=>'required', 'id'=>'name')); ?>
 					<?php echo $this->Form->input('Consultant.cpf', array('label' => 'CPF: ','required'=>'required', 'id'=>'cpf','div'=>'div_cpf')); ?>
 					<?php echo $this->Form->input('Consultant.acronym', array('label' => 'Abreviação do Nome: ','required'=>'required', 'id'=>'acronym','div'=>'div_acronym')); ?>
-					<?php echo $this->Form->input('Consultant.acronym_color', array('type'=> 'text','label' => 'Cor: ','required'=>'required', 'id'=>'acronym_color','div'=>'div_acronym_color')); ?>
-					<?php echo $this->Form->input('Consultant.phone1', array('label' => 'Telefone: ','required'=>'required', 'id'=>'phone1')); ?>
-					<?php echo $this->Form->input('Consultant.phone2', array('label' => 'Celular: ','required'=>'required', 'id'=>'phone2')); ?>
+					<?php echo $this->Form->input('Consultant.acronym_color', array('type'=> 'text','label' => 'Cor: ','required'=>'required', 'value'=>'#000000','id'=>'acronym_color','div'=>'div_acronym_color')); ?>
+					<?php echo $this->Form->input('Consultant.phone1', array('label' => 'Telefone: ', 'id'=>'phone1')); ?>
+					<?php echo $this->Form->input('Consultant.phone2', array('label' => 'Celular: ', 'id'=>'phone2')); ?>
 					<?php echo $this->Form->input('Consultant.email', array('label' => 'E-mail: ','required'=>'required', 'id'=>'email')); ?>					
 			</fieldset>
 			<fieldset id="endereço">
 				<legend>Endereço</legend>
 					<?php echo $this->Form->input('Address.address', array('label' => 'Endereço: ','required'=>'required', 'id'=>'address')); ?>
 					<?php echo $this->Form->input('Address.number', array('label' => 'Número: ','required'=>'required')); ?>
-					<?php echo $this->Form->input('Address.complement', array('label' => 'Complemento: ','required'=>'required')); ?>
+					<?php echo $this->Form->input('Address.complement', array('label' => 'Complemento: ')); ?>
 					<?php echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro: ','required'=>'required','id'=>'neighborhood')); ?>
 					<?php echo $this->Form->input('Address.city', array('label' => 'Cidade: ','required'=>'required', 'id'=>'city')); ?>
-					<?php echo $this->Form->input('Address.state', array('label' => 'Estado: ','required'=>'required', 'id'=>'state')); ?>
+					<?php echo $this->Form->input('Address.state', array('options' => array("AC"=>"AC","AL"=>"AL","AP"=>"AP","AM"=>"AM","BA"=>"BA","CE"=>"CE","DF"=>"DF","ES"=>"ES","GO"=>"GO","MA"=>"MA","MG"=>"MG","MT"=>"MT","MS"=>"MS","PA"=>"PA","PB"=>"PB","PE"=>"PE","PI"=>"PI","PR"=>"PR","RJ"=>"RJ","RN"=>"RN","RO"=>"RO","RR"=>"RR","RS"=>"RS","SC"=>"SC","SE"=>"SE","SP"=>"SP","TO"=>"TO"),'type' => 'select', 'empty' => 'Selecione','label' => 'Estado: ','required'=>'required', 'id'=>'state')); ?>
 					<?php echo $this->Form->input('Address.zip_code', array('label' => 'CEP: ','required'=>'required', 'id'=>'zip_code')); ?>
 			</fieldset>
 			<?php echo $this->Form->end('Confirmar Cadastro'); ?>
