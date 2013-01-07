@@ -101,7 +101,7 @@ ul.table{
     list-style-type: none;
 	display:table;
 	width:98%;
-	margin-left:5%;
+	margin-left:2.5%;
 }
 
 ul.line{
@@ -128,15 +128,19 @@ ul.line li{
 }
 
 ul.line li.nome{
-    width: 310px;
+    width: 305px;
 }
 
 ul.line li.cpf{
-    width: 130px;
+    width: 120px;
 }
 
 ul.line li.email{
-    width: 310px;
+    width: 300px;
+}
+
+ul.line li.tel{
+    width: 110px;
 }
 
 ul.line li.cor{
@@ -144,11 +148,16 @@ ul.line li.cor{
 }
 
 ul.line li.editar{
-    width: 80px;
+    width: 70px;
 }
 
 ul.line li.remover{
-    width: 80px;
+    width: 70px;
 }
+
+ul.line li.visualizar{
+    width: 70px;
+}
+
 
 

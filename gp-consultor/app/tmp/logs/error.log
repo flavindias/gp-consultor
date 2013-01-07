@@ -1223,3 +1223,37 @@
 2013-01-06 04:38:19 Error: [MissingControllerException] Controller class JsController could not be found.
 #0 C:\site\sws\gp-consultor\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-06 20:50:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'MD' for key 'acronym_UNIQUE'
+#0 C:\site\sws\gp-consultor\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\site\sws\gp-consultor\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('UPDATE `swsdb`....', Array)
+#2 C:\site\sws\gp-consultor\lib\Cake\Model\Datasource\Database\Mysql.php(360): DboSource->execute('UPDATE `swsdb`....')
+#3 C:\site\sws\gp-consultor\lib\Cake\Model\Model.php(1719): Mysql->update(Object(Consultant), Array, Array)
+#4 C:\site\sws\gp-consultor\app\Controller\ConsultantsController.php(52): Model->save(Array)
+#5 [internal function]: ConsultantsController->edit('3')
+#6 C:\site\sws\gp-consultor\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ConsultantsController), Array)
+#7 C:\site\sws\gp-consultor\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\site\sws\gp-consultor\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\site\sws\gp-consultor\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-01-07 17:41:12 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 C:\site\sws\gp-consultor\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 C:\site\sws\gp-consultor\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 C:\site\sws\gp-consultor\lib\Cake\Model\Model.php(3164): ConnectionManager::getDataSource('default')
+#3 C:\site\sws\gp-consultor\lib\Cake\Model\Model.php(1096): Model->setDataSource('default')
+#4 C:\site\sws\gp-consultor\lib\Cake\Model\Model.php(3186): Model->setSource('consultants')
+#5 C:\site\sws\gp-consultor\lib\Cake\Model\Model.php(2637): Model->getDataSource()
+#6 C:\site\sws\gp-consultor\app\Controller\ConsultantsController.php(18): Model->find('all')
+#7 [internal function]: ConsultantsController->index()
+#8 C:\site\sws\gp-consultor\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ConsultantsController), Array)
+#9 C:\site\sws\gp-consultor\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\site\sws\gp-consultor\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\site\sws\gp-consultor\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-01-07 17:56:44 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\site\sws\gp-consultor\app\View\Consultants\index.ctp, line 8]
+2013-01-07 17:56:44 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+#0 C:\site\sws\gp-consultor\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\site\sws\gp-...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\site\sws\gp-...', 8, Array)
+#2 C:\site\sws\gp-consultor\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\site\sws\gp-...', 8, Array)
+#3 C:\site\sws\gp-consultor\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

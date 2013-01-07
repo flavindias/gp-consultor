@@ -36,6 +36,7 @@
                         <li class="cor"><b>Cor/Sigla</b></li>
                         <li class="editar"><b>Editar</b></li>
                         <li class="remover"><b>Remover</b></li>
+                        <li class="visualizar"><b>Visualizar</b></li>
                     </ul>
                 </li>
 				<?php echo $this->fetch('content'); ?>
