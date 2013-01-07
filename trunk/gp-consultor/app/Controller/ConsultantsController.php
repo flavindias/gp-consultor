@@ -33,13 +33,17 @@
  	
  	public function add()
    {
-   	  $this -> layout = 'base';
+   	 $this -> layout = 'base';
       if($this->request->is('post'))
       {
+      	
+      	//$this->Consultant->cpf = $this->LimparMask($this->Consultant->cpf); 
+      	
+      	
          if($this->Consultant->saveAll($this->request->data))
          {
             $this->Session->setFlash('O usuário foi adicionado.');
-            $this->redirect(array('action' => 'index'));
+           $this->redirect(array('action' => 'index'));
          } }
    }
    public function edit($id = NULL)
@@ -54,8 +58,6 @@
 	    if (!$consult) {
 	        throw new NotFoundException(__('Invalid post'));
 	    }
-		
-		
 		if ($this->request->is('get')) {
 			$this->request->data = $this->Consultant->read();
 		} 
@@ -75,6 +77,13 @@
 			$this->Session->setFlash('Consultor foi deletado.');
 			$this->redirect(array('action' => 'index'));
 		}
+   }
+   //função para eliminar caracteres das mascaras
+   public function LimparMask($valor){
+   		//$mask = array(",", ".","-","(",")");
+   		$mask = '.';
+        $result = str_replace($mask, "", $valor);
+        return $result;
    }
  	
  }
