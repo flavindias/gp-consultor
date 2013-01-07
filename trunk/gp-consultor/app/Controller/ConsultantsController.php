@@ -86,9 +86,35 @@
         return $result;
    }
    
-   public function ajaxMsg(){
-   		$this->layout='ajax';
-   		$this->set('mensagem',' Ola Mundo');
+   public function ajaxMsg($obj=null){
+   		$this->layout='ajax';   
+   		$obj ="#000000";		   		
+   		if(strlen($obj) == 2 ) {
+   			if($this->Consultant->findByAcronym($obj)){
+   			$this->set('mensagem', 'Abreviação já cadastrada.');}
+   			else{
+   			$this->set('mensagem','');
+   		}
+   		}
+   		else if(strlen($obj) == 7){
+   			if ($this->Consultant->findByAcronym_color($obj))
+   			{
+   			$this->set('mensagem', 'Cor já cadastrada');
+   			}
+   			else{
+   			$this->set('mensagem',$obj);
+   			}
+   		}
+   		else if(strlen($obj) == 14){
+   			if($this->Consultant->findByCpf($obj)){
+   			$this->set('mensagem', 'CPF já cadastrado!');}
+   			else{
+   			$this->set('mensagem','');
+   		}
+   		}	
+   		else{
+   			$this->set('mensagem','no');
+   		}
    }
  	
  }
