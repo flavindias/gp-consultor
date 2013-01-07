@@ -30,9 +30,15 @@ $('document').ready(function(){
 		$('#Menu_Home').animate({'margin-left':'-150px'});	
 	});
 
+		
+	//Mascaras
 	$("#cpf").mask("999.999.999-99");
 	$("#phone1").mask("(99)9999-9999");
 	$("#phone2").mask("(99)9999-9999");
 	$("#zip_code").mask("99.999-999");
-
+	
+	
+	})
+	
+	
 });
