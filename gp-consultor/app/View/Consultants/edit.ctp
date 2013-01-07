@@ -4,7 +4,7 @@
  <?php echo $this->Form->create('Consultant', array('action' => 'edit')); ?>
 			<fieldset id="dados_pessoais">
 				<legend>Dados Pessoais</legend>
-					
+					<?php echo $this->Form->input('Consultant.id', array('type' => 'hidden')); ?>
 					<?php echo $this->Form->input('Consultant.name', array('label' => 'Nome: ','placeholder'=>'', 'id'=>'name')); ?>
 					<?php echo $this->Form->input('Consultant.cpf', array('label' => 'CPF: ','placeholder'=>'', 'id'=>'cpf')); ?>
 					<?php echo $this->Form->input('Consultant.acronym', array('label' => 'Abreviação do Nome: ', 'id'=>'acronym')); ?>
@@ -15,6 +15,7 @@
 			</fieldset>
 			<fieldset id="endereço">
 				<legend>Endereço</legend>
+				<?php echo $this->Form->input('Address.id', array('type' => 'hidden')); ?>
 					<?php echo $this->Form->input('Address.address', array('label' => 'Endereço: ')); ?>
 					<?php echo $this->Form->input('Address.number', array('label' => 'Número: ')); ?>
 					<?php echo $this->Form->input('Address.complement', array('label' => 'Complemento: ')); ?>
@@ -22,6 +23,7 @@
 					<?php echo $this->Form->input('Address.city', array('label' => 'Cidade: ')); ?>
 					<?php echo $this->Form->input('Address.state', array('label' => 'Estado: ')); ?>
 					<?php echo $this->Form->input('Address.zip_code', array('label' => 'CEP: ', 'id' => 'zip_code')); ?>
+					
 			</fieldset>
 			<?php echo $this->Form->end('Salvar Edição'); ?>
 		</form>
