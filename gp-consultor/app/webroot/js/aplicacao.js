@@ -50,16 +50,37 @@ $('document').ready(function(){
 		}
 	});
 
+	
 	//Verificação	
-	 $('#name').click(function(){   
-		 
-                    $.get("ajaxMsg",null,
-                        function(data) {   
-                           $("body").append(data);
-                        }
-                    ); 
+	 $('input').blur(function(){ 
+		 var id =  $(this).attr('id');
+		 //alert($(this).val());
+		 $.get("ajaxMsg/"+$(this).val(),null,
+			function(data) {   
+			   $('.div_'+id).append('<h3 class="alert">'+data+'</h3>');
+			    }
+			) ;
       });        
-
+	 
+	 
+	 
+	 //Função Do campo de cor, escolhendo a cor e edicionando ao campo como background a cor e o valor hexadecimal
+	 $('#acronym_color').ColorPicker({
+		 	///var elemento = this;
+			color: '#000001',
+			onShow: function (colpkr) {
+				$(colpkr).fadeIn(500);
+				return false;
+			},
+			onHide: function (colpkr) {
+				$(colpkr).fadeOut(500);
+				return false;
+			},
+			onChange: function (hsb, hex, rgb) {
+				$('#acronym_color').css('backgroundColor', '#' + hex);
+				$('#acronym_color').val('#'+hex);
+			}
+		});
 
 
 	

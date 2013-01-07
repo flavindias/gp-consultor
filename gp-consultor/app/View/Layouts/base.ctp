@@ -4,11 +4,13 @@
 	<title>Cadastro de Consultor</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<?php echo $this->Html->css('styleAddConsultant'); ?>
+	<?php echo $this->Html->css('colorpicker'); ?>
 	<?php echo $this->Html->script('jquery-1.7.1.min'); ?>
 	<?php echo $this->Html->script('jquery-1.2.6.pack'); ?>
 	<?php echo $this->Html->script('jquery.maskedinput-1.1.4.pack'); ?>
 	<?php echo $this->Html->script('buscacep'); ?>
 	<?php echo $this->Html->script('validarcpf'); ?>
+	<?php echo $this->Html->script('colorpicker'); ?>
 
 	<?php echo $this->Html->script('aplicacao'); ?>
 </head>
