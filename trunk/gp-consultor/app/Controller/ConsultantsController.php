@@ -78,31 +78,30 @@
 			$this->redirect(array('action' => 'index'));
 		}
    }
-   //função para eliminar caracteres das mascaras
-   public function LimparMask($valor){
-   		//$mask = array(",", ".","-","(",")");
-   		$mask = '.';
-        $result = str_replace($mask, "", $valor);
-        return $result;
-   }
    
+   //Chamada ajax
    public function ajaxMsg($obj=null){
-   		$this->layout='ajax';   
-   		$obj ="#000000";		   		
+   		$this->layout='ajax';
+   		//Fazer verificação do obj de entrada enviado, ser for :
+   		//uma abreviação sera 2 digitos;
+   		//uma abreviação de cor sera 6 digitos;
+   		//um cpf sera 14 digitos, isso por causa da mascara    	   		
    		if(strlen($obj) == 2 ) {
+   			//Esse "findBy" acompanhado do nome do campo da tabela faz um seletec, com um where nele.
    			if($this->Consultant->findByAcronym($obj)){
    			$this->set('mensagem', 'Abreviação já cadastrada.');}
    			else{
    			$this->set('mensagem','');
    		}
    		}
-   		else if(strlen($obj) == 7){
+   		else if(strlen($obj) == 6){
+   			$obj = '#'.$obj;
    			if ($this->Consultant->findByAcronym_color($obj))
    			{
    			$this->set('mensagem', 'Cor já cadastrada');
    			}
    			else{
-   			$this->set('mensagem',$obj);
+   			$this->set('mensagem','');
    			}
    		}
    		else if(strlen($obj) == 14){
@@ -113,7 +112,7 @@
    		}
    		}	
    		else{
-   			$this->set('mensagem','no');
+   			$this->set('mensagem','');
    		}
    }
  	

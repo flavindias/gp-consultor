@@ -51,15 +51,34 @@ $('document').ready(function(){
 	});
 
 	
-	//Verificação	
+	//Função para a Verificação se as informações dos campos ja existem
+	
 	 $('input').blur(function(){ 
 		 var id =  $(this).attr('id');
-		 //alert($(this).val());
-		 $.get("ajaxMsg/"+$(this).val(),null,
-			function(data) {   
-			   $('.div_'+id).append('<h3 class="alert">'+data+'</h3>');
-			    }
-			) ;
+		 //Remoção de attr de bloqueio caso eles tenham sido colocados
+		 $('.submit input').removeAttr('disabled');
+		 $('.div_'+id+' .alert').remove();
+		 
+		 //Eliminar o '#' da cor, para não gerar comflito na url de envio
+		 var obj = $(this).val().replace('#','');
+		 		 
+		 if ((id == 'acronym') || (id == 'cpf') || (id =='acronym_color')){
+			 //chamda ajax
+			 $.get("ajaxMsg/"+obj,null,
+				function(data) {   
+				   if(data != ''){
+					   //Adcionar uma tag de aviso que o elemento ja existe
+					   $('.div_'+id).append('<h3 class="alert">'+data+'</h3>');
+					   //bloquei o botão de submit para que não possa ser enviado o formulario
+					   $('.submit input').attr('disabled','disabled');
+				   }
+				  }
+				) ;
+		 }
+		 else{
+			 //Função para verificar se a cor exista caso eu clique em outros input, ele sempre ira verificar
+			 funcaoAuxiliarCor();
+		 }
       });        
 	 
 	 
@@ -70,6 +89,7 @@ $('document').ready(function(){
 			color: '#000001',
 			onShow: function (colpkr) {
 				$(colpkr).fadeIn(500);
+				
 				return false;
 			},
 			onHide: function (colpkr) {
@@ -86,3 +106,17 @@ $('document').ready(function(){
 	
 	
 });
+
+
+function funcaoAuxiliarCor(){
+	var obj = $('#acronym_color').val().replace('#','');
+	 $('.div_acronym_color .alert').remove();
+	$.get("ajaxMsg/"+obj,null,
+			function(data) {   
+			   if(data != ''){
+				   $('.div_acronym_color').append('<h3 class="alert">'+data+'</h3>');
+				   $('.submit input').attr('disabled','disabled');
+			   }
+			  }
+			) ;
+}
