@@ -8,7 +8,7 @@
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright 2013 -  BSI UFRPE 4º Periodo, 2012.2
+ * @copyright     Copyright 2013 -  BSI UFRPE 4ï¿½ Periodo, 2012.2
  * @link          http://cakephp.org CakePHP(tm) Project
  * @package       app.webroot.css
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
@@ -20,6 +20,14 @@
 ==========================
 ==========================*/
 
+
+
+*{
+	padding:0px;
+	margin:0px;
+	font-family: Verdana !important;
+}
+
 h1 {
 	clear:both;
     color: #FFF; 
@@ -30,7 +38,7 @@ h1 {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Verdana;
     background-color: #1fa0b7;
     line-height: 24px; 
 }
@@ -167,47 +175,56 @@ legend{
 #Menu_Home{
 	z-index:99999;
     background-color: #010101;
+    width:500px;
 	opacity:0.85;
 	/*alterado*/
-	border-radius: 0px 22px 22px 0px ;
-	-webkit-border-radius: 0px 22px 22px 0px ;
-	-moz-border-radius: 0px 22px 22px 0px ;
 	padding:10px 0px 10px 0px;
-    margin-left: -150px;
+    margin-left: -500px;
 	position:fixed;
     height: 100%;
+    border:2px solid #010101;
 	/*end*/
 }
 #Menu_Home ul  {
 	margin-top:10px;
-	padding:0px 20px;
 }
 #Menu_Home ul li{
 	list-style:none;
 	color:#FFF;
 	opacity:1;
-	
 }
 #Menu_Home ul li a{
 	text-decoration:none;
 	opacity:1 !important;
 	color:#000;
 	display:block;
-	padding:10px 20px;
+	padding:20px 0px 20px 100px;
 	margin-top:10px;
-	background-color:#E4E4E4;
+	font-size:26px;
+	color:#FFF;
 	
+}
+#Menu_Home ul li a:hover {
+	background-color:#1fa0b7;
 }
 
 #botao_home {
-	margin-left:130px;
-	position:absolute;
+	color:#1fa0b7;
+	margin-left:-10px;
+	text-decoration:none;
+	font-size:40px;
+	width:530px;
 	background-color: #010101;
 	display:block;
 	padding:10px 10px 10px 20px;
 	border-radius: 0px 22px 22px 0px ;
 	-webkit-border-radius: 0px 22px 22px 0px ;
 	-moz-border-radius: 0px 22px 22px 0px ;
+	line-height: 50px;
+	padding-left:40px;
+}
+#botao_home img{
+	margin-left:60px;
 }
 
 #bt-cadastrar{
@@ -229,8 +246,8 @@ legend{
 ul.table{
     list-style-type: none;
 	display:table;
-	width:98%;
-	margin-left:2.5%;
+	width:100%;
+	padding:0px;
 }
 
 ul.line{
@@ -257,7 +274,7 @@ ul.line li{
 }
 
 ul.line li.nome{
-    width: 305px;
+    width: 260px;
 }
 
 ul.line li.cpf{
@@ -265,7 +282,7 @@ ul.line li.cpf{
 }
 
 ul.line li.email{
-    width: 300px;
+    width: 250px;
 }
 
 ul.line li.tel{
@@ -273,11 +290,11 @@ ul.line li.tel{
 }
 
 ul.line li.cor{
-    width: 80px;
+    width: 75px;
 }
 
 ul.line li.editar{
-    width: 70px;
+    width: 30px;
 }
 
 ul.line li.remover{
@@ -285,7 +302,7 @@ ul.line li.remover{
 }
 
 ul.line li.visualizar{
-    width: 70px;
+    width: 30px;
 }
 
 /*----- Add ------ */

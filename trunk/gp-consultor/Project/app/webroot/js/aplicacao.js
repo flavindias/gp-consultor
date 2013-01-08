@@ -9,7 +9,7 @@ $('document').ready(function(){
 			flag = true;
 		}
 		else{
-			$('#Menu_Home').animate({'margin-left':'-150px'});	
+			$('#Menu_Home').animate({'margin-left':'-500px'});	
 			flag =false;
 		}		
 	});
@@ -18,7 +18,7 @@ $('document').ready(function(){
 	})
 	$('html').click(function(){
 		flag = false;
-		$('#Menu_Home').animate({'margin-left':'-150px'});	
+		$('#Menu_Home').animate({'margin-left':'-500px'});	
 	});
 	//endmenu
 
