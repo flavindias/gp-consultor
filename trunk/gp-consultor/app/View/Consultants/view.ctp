@@ -15,7 +15,7 @@ array('escape'=>false),"Você quer excluir realmente ?");?>
 <p><span>Nome: </span> <?php echo $consultant['Consultant']['name']; ?></p>
 <p><span>CPF: </span><?php echo $consultant['Consultant']['cpf']; ?></p>
 <p><span>Abreviação: </span><?php echo $consultant['Consultant']['acronym']; ?></p>
-<p><span>Cor: </span><?php echo $consultant['Consultant']['acronym_color']; ?></p>
+<p><div id="cor" style="background-color: <?php echo $consultant['Consultant']['acronym_color']; ?> "><span>Cor</span></p></div>
 <p><span>Telefone: </span><?php echo $consultant['Consultant']['phone1']; ?></p>
 <p><span>Celular: </span><?php echo $consultant['Consultant']['phone2']; ?></p>
 <p><span>E-mail: </span><?php echo $consultant['Consultant']['email']; ?></p>
