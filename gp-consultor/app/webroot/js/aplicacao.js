@@ -64,7 +64,7 @@ $('document').ready(function(){
 		 		 
 		 if ((id == 'acronym') || (id == 'cpf') || (id =='acronym_color')){
 			 //chamda ajax
-			 $.get("ajaxMsg/"+obj,null,
+			 $.get("/sws/Consultants/ajaxMsg/"+obj,null,
 				function(data) {   
 				   if(data != ''){
 					   //Adcionar uma tag de aviso que o elemento ja existe
@@ -111,7 +111,7 @@ $('document').ready(function(){
 function funcaoAuxiliarCor(){
 	var obj = $('#acronym_color').val().replace('#','');
 	 $('.div_acronym_color .alert').remove();
-	$.get("ajaxMsg/"+obj,null,
+	$.get("/sws/Consultants/ajaxMsg/"+obj,null,
 			function(data) {   
 			   if(data != ''){
 				   $('.div_acronym_color').append('<h3 class="alert">'+data+'</h3>');
