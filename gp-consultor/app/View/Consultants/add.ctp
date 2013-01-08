@@ -15,6 +15,7 @@
 			</fieldset>
 			<fieldset id="endereço">
 				<legend>Endereço</legend>
+				
 					<?php echo $this->Form->input('Address.address', array('label' => 'Endereço: ','required'=>'required', 'id'=>'address')); ?>
 					<?php echo $this->Form->input('Address.number', array('label' => 'Número: ','required'=>'required')); ?>
 					<?php echo $this->Form->input('Address.complement', array('label' => 'Complemento: ')); ?>
