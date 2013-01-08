@@ -738,3 +738,46 @@
 2013-01-08 21:59:43 Error: [MissingControllerException] Controller class JsController could not be found.
 #0 C:\Sites\sws\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-08 23:02:01 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\Sites\swsOLD\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 23:02:01 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\Sites\swsOLD\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 23:36:28 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\Sites\sws\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 23:36:28 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\Sites\sws\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 23:39:24 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\Sites\sws\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 00:10:45 Error: [MissingActionException] Action Consultants::consultants() could not be found.
+#0 C:\Sites\sws\Project\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\Project\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\Project\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-01-09 00:10:45 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\Sites\sws\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 00:10:45 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\Sites\sws\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 00:12:43 Error: [MissingActionException] Action Consultants::consultants() could not be found.
+#0 C:\Sites\sws\Project\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\Sites\sws\Project\lib\Cake\Controller\Controller.php(530): Scaffold->__construct(Object(ConsultantsController), Object(CakeRequest))
+#2 C:\Sites\sws\Project\lib\Cake\Controller\Controller.php(489): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\Sites\sws\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\Sites\sws\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ConsultantsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Sites\sws\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-01-09 00:12:44 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\Sites\sws\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 00:12:44 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\Sites\sws\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

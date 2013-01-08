@@ -4,7 +4,7 @@
     
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<?php echo $this->Html->css('styleViewConsultant'); ?>
+		<?php echo $this->Html->css('style-sws'); ?>
 		<?php echo $this->Html->script('jquery-1.7.1.min'); ?>
 		<?php echo $this->Html->script('aplicacao'); ?>
     </head>
@@ -29,8 +29,8 @@
 	                        <li class="tel"><b>Telefone 1</b></li>
 	                        <li class="tel"><b>Telefone 2</b></li>
 	                        <li class="cor"><b>Cor/Sigla</b></li>
-	                        <li class="visualizar"><b>Visualizar</b></li>
-	                        <li class="editar"><b>Editar</b></li>
+	                        <li class="visualizar"><b>Vis.</b></li>
+	                        <li class="editar"><b>Edt.</b></li>
 	                        <li class="remover"><b>Remover</b></li>
 	                    </ul>
 	                </li>

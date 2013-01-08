@@ -14,13 +14,7 @@
 	<?php echo $this->Html->script('aplicacao'); ?>
 </head>
 <body>
-	<div id="Menu_Home">
-		<a href="#" id="botao_home"><?php echo $this->Html->image('botao_home.png', array('alt' => ''))?></a>
-		<ul>
-			<li><?php echo $this->Html->link('Consultor', array('action' =>'../consultants'));?></li>
-			<li><?php echo $this->Html->link('Empresa', array('action' =>'../companies'));?></li>
-		</ul>
-	</div>
+	<?php include 'includes/menu.php' ?>
 	
 	<div class="conteudo">
 		<?php echo $this->fetch('content'); ?>
