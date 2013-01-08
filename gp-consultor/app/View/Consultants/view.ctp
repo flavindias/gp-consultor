@@ -1,5 +1,5 @@
 
-<h1>Consultor - <?php echo $consultant['Consultant']['name']; ?> 
+<h1 id="titulo">Consultor - <?php echo $consultant['Consultant']['name']; ?> 
 <?php echo $this->Html->link(
 $this->Html->image("edit.png", array("alt" => "Editar")),'edit/'.$consultant['Consultant']['id'],
 array('escape'=>false)) ?> 
@@ -11,7 +11,7 @@ array('escape'=>false),"Você quer excluir realmente ?");?>
 </h1>
 
 <div id="dados"> 
-<h2 id="titulo"> Dados Pessoais </h2>
+<h2 id="titulodados"> Dados Pessoais </h2>
 <p><span>Nome: </span> <?php echo $consultant['Consultant']['name']; ?></p>
 <p><span>CPF: </span><?php echo $consultant['Consultant']['cpf']; ?></p>
 <p><span>Abreviação: </span><?php echo $consultant['Consultant']['acronym']; ?></p>
@@ -22,7 +22,7 @@ array('escape'=>false),"Você quer excluir realmente ?");?>
 </div>
 
 <div id="endereco">
-<h2 id="titulo">Endereço</h2>
+<h2 id="tituloendereco">Endereço</h2>
 <p><span>Endereço: </span><?php echo $consultant['Address']['address']; ?></p>
 <p><span>Número: </span><?php echo $consultant['Address']['number']; ?></p>
 <p><span>Complemento: </span><?php echo $consultant['Address']['complement']; ?></p>
