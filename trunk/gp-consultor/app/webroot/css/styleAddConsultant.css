@@ -162,9 +162,8 @@ h1 {
 	background: #2fb2c8;
 	padding-left: 8px;
 	margin-top: 20px;
-	width: 380px;
+	width: 450px;
 	margin-bottom: 1000px;
-	margin-right: 10px;
 }
 
 #dados {
@@ -173,18 +172,21 @@ h1 {
 	padding-left: 8px;
 	margin-top: 20px;
 	width: 380px;
-	margin-left: 200px;
+	margin-left: 140px;
 }
 
 #consultant{
-	margin-left: 0%;
+	margin-left: -4%;
 	margin-top: 20px;
 	float: left;
 	position: absolute
 }
 
-#titulo{
+#titulodados, #tituloendereco{
 	text-align: center;
 }
 
+#titulo{
+	margin-left: -40px;
+}
 
