@@ -3,7 +3,7 @@
 <head>
 	<title>Cadastro de Consultor</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<?php echo $this->Html->css('style-sws'); ?>
+	<?php echo $this->Html->css('styleAddConsultant'); ?>
 	<?php echo $this->Html->css('colorpicker'); ?>
 	<?php echo $this->Html->script('jquery-1.7.1.min'); ?>
 	<?php echo $this->Html->script('jquery.maskedinput-1.1.4.pack'); ?>
