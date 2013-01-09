@@ -17,31 +17,62 @@
 
 		<?php include 'includes/menu.php'; ?>
 		
-		<div class="conteudo">
-			<h1>Consultores</h1>
-	        <div>
-	            <ul class="table">
-	                <li>
-	                    <ul class="line">
-	                        <li class="nome"><b>Nome</b></li>
-	                        <li class="cpf"><b>CPF</b></li>
-	                        <li class="email"><b>E-mail</b></li>
-	                        <li class="tel"><b>Telefone 1</b></li>
-	                        <li class="tel"><b>Telefone 2</b></li>
-	                        <li class="cor"><b>Cor/Sigla</b></li>
-	                        <li class="visualizar"><b>Vis.</b></li>
-	                        <li class="editar"><b>Edt.</b></li>
-	                        <li class="remover"><b>Remover</b></li>
-	                    </ul>
-	                </li>
-					<?php echo $this->fetch('content'); ?>
-	            </ul>
+		<div class="consultantindex">
+
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<th>Nome</th>
+					<th>CPF</th>
+					<th>Email</th>
+					<th>Telefone 1</th>
+					<th>Telefone 2</th>
+					<th>Cor</th>
+					<th class="actions">Ações</th>
+				</tr>
+
+				<?php
+			
+					$i = 0;
+					foreach ($consultants as $consul) 
+					{
+						$class = null;
+				
+						if($i++ % 2 == 0)
+						{
+						$class = 'class="altrow"';
+					}
+					
+				?>
+
+				<tr <?php echo $class; ?>>
+					<td class="nome"><?php echo $consul['Consultant']['name']; ?></td>
+					<td class="cpf"><?php echo $consul['Consultant']['cpf']; ?></td>
+					<td class="email"><?php echo $consul['Consultant']['email']; ?></td>
+					<td class="telefone"><?php echo $consul['Consultant']['phone1']; ?></td>
+					<td class="telefone"><?php echo $consul['Consultant']['phone2']; ?>
+					<td class="cor" style="background-style:<?php echo $consul['Consultant']['acronym_color']; ?>"><?php echo $consul['Consultant']['acronym_color']; ?>
+					<div class="actions">
+						<td>
+							<?php echo $this->Html->link(
+							$this->Html->image("view.png", array('alt' => 'Ver')), array('action' => 'view', $consul['Consultant']['id']), array('escape'=>false, 'id'=>'link'))?>
+
+							<?php echo $this->Html->link(
+							$this->Html->image("edit.png", array('alt' => 'Editar')), array('action' => 'edit', $consul['Consultant']['id']),
+							array('escape'=>false, 'id'=>'link'))?>
+
+							<?php echo $this->Html->link(
+							$this->Html->image("delete.png", array('alt' => 'Remover')), array('action' => 'delete', $consul['Consultant']['id']),
+							array('escape'=>false, 'id'=>'link'), "Confirmar exclusão do consultor ". $consul['Consultant']['name'] . "?");
+					
+						echo $this->Session->flash();
+					?></td>
+					</div>
+				</tr>
+				<?php } ?>
+			</table>
 	
-	        </div>
-	   	</div>
+</div>
 
     </body>
-
-
 
 </html>
