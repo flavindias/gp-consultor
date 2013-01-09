@@ -137,6 +137,89 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
 
+-- -----------------------------------------------------
+-- Table `swsdb`.`projects`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `swsdb`.`projects` ;
+
+CREATE  TABLE IF NOT EXISTS `swsdb`.`projects` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `name` VARCHAR(45) NOT NULL ,
+  `description` VARCHAR(200) NULL ,
+  `acronym` VARCHAR(15) NOT NULL ,
+  `a_hours` INT NULL ,
+  `b_hours` INT NULL ,
+  `c_hours` INT NULL ,
+  `parent_project_id` INT NULL ,
+  `company_id` INT NULL ,
+  `removed` TINYINT(1) NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_projects_projects` (`parent_project_id` ASC) ,
+  INDEX `fk_projects_companies` (`company_id` ASC) ,
+  CONSTRAINT `fk_projects_projects`
+    FOREIGN KEY (`parent_project_id`)
+    REFERENCES `swsdb`.`projects` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_projects_companies`
+    FOREIGN KEY (`company_id`)
+    REFERENCES `swsdb`.`companies` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+-- -----------------------------------------------------
+-- Table `swsdb`.`activities`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `swsdb`.`activities` ;
+
+CREATE  TABLE IF NOT EXISTS `swsdb`.`activities` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `start_hours` TIME NOT NULL ,
+  `end_hours` TIME NOT NULL ,
+  `date` DATE NOT NULL ,
+  `observations` MEDIUMTEXT NULL ,
+  `type` VARCHAR(1) NOT NULL ,
+  `hours_worked` TIME NOT NULL ,
+  `project_id` INT NOT NULL ,
+  `removed` TINYINT(1) NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_activities_projects` (`project_id` ASC) ,
+  CONSTRAINT `fk_activities_projects`
+    FOREIGN KEY (`project_id`)
+    REFERENCES `swsdb`.`projects` (`id`)
+    ON DELETE RESTRICT
+    ON UPDATE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+-- -----------------------------------------------------
+-- Table `swsdb`.`consultants_has_activities`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `swsdb`.`consultants_has_activities` ;
+
+CREATE  TABLE IF NOT EXISTS `swsdb`.`consultants_has_activities` (
+  `consultant_id` INT NOT NULL ,
+  `activity_id` INT NOT NULL ,
+  PRIMARY KEY (`consultant_id`, `activity_id`) ,
+  INDEX `fk_consultants_has_activities_consultants` (`consultant_id` ASC) ,
+  INDEX `fk_consultants_has_activities_activities` (`activity_id` ASC) ,
+  CONSTRAINT `fk_consultants_has_activities_consultants`
+    FOREIGN KEY (`consultant_id`)
+    REFERENCES `swsdb`.`consultants` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_consultants_has_activities_activities`
+    FOREIGN KEY (`activity_id`)
+    REFERENCES `swsdb`.`activities` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
