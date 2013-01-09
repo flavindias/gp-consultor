@@ -36,15 +36,12 @@
    	 $this -> layout = 'base';
       if($this->request->is('post'))
       {
-      	
-      	//$this->Consultant->cpf = $this->LimparMask($this->Consultant->cpf); 
-      	
-      	
          if($this->Consultant->saveAll($this->request->data))
          {
-            $this->Session->setFlash('O usuário foi adicionado.');
+           $this->Session->setFlash('O usuário foi adicionado.');
            $this->redirect(array('action' => 'index'));
-         } }
+         } 
+      }
    }
    public function edit($id = NULL)
    {
