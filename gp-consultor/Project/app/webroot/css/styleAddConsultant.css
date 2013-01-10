@@ -5,6 +5,7 @@ body{
 	background-color: #1fa0b7;
 	line-height: 24px;
 	font-weight: 100;
+	margin:0px;
 
 
 }
@@ -131,6 +132,8 @@ h1 {
 }
 #Menu_Home ul  {
 	margin-top:10px;
+	margin-left:0px;
+	padding:0px;
 }
 #Menu_Home ul li{
 	list-style:none;
