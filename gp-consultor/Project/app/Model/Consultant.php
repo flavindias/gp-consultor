@@ -9,5 +9,11 @@
  class Consultant extends AppModel{
  	public $name = 'Consultant';
  	var $hasOne = array('Address');
+ 	public $validate = array(
+    'cpf' => array(
+        'rule'    => 'isUnique',
+        'message' => 'CPF ja existe'
+    )
+);
  }
 ?>

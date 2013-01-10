@@ -40,6 +40,7 @@ h1 {
 body {
     font-family: Verdana;
     background-color: #1fa0b7;
+    background-image:url('../img/light_noise_diagonal.png');
     line-height: 24px; 
 }
 
@@ -236,7 +237,6 @@ legend{
 #bt-cadastrar{
 	 margin:-15px;
 	 float: right;
-	 background-color:#1fa0b7;
 	 padding:5px 5px;
 	 margin-right: 5px;
 }
