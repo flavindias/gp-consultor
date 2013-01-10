@@ -19,8 +19,7 @@
 		
 		<div class="conteudo">
 	        <h1>
-	        	<?php echo $this->Html->image('company-logo.png', array('id'=>'companyLogo'))?> 
-	            SWSchool - Empresa
+	            Empresas
 	        </h1>
 	
 			

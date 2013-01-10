@@ -18,8 +18,7 @@
 		<?php include 'includes/menu.php'; ?>
 
 		<div class="conteudo">
-	        <h1>
-	        	<?php echo $this->Html->image('consultants.png', array('id'=>'consultantImg'))?> 
+	        <h1> 
 	            Consultores
 	        </h1>
 			<?php echo $this->fetch('content'); ?>
