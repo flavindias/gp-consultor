@@ -19,7 +19,8 @@
 
 		<div class="conteudo">
 	        <h1>
-	            SWSchool - Consultor
+	        	<?php echo $this->Html->image('consultants.png', array('id'=>'consultantImg'))?> 
+	            Consultores
 	        </h1>
 			<?php echo $this->fetch('content'); ?>
 		</div>

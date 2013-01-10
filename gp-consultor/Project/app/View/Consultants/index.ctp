@@ -8,7 +8,7 @@
 			<th>Email</th>
 			<th>Telefone 1</th>
 			<th>Telefone 2</th>
-			<th>Cor</th>
+			<th>Cor-Sigla</th>
 			<th class="actions">Ações</th>
 		</tr>
 

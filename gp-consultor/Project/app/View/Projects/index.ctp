@@ -1,6 +1,6 @@
 
 
-<div class="company index">
+<div class="projectindex">
 
 	<table cellpadding="0" cellspacing="0">
 		<tr>
