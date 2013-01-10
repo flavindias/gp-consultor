@@ -6,6 +6,7 @@ body{
 	line-height: 24px;
 	font-weight: 100;
 	margin:0px;
+	background-image:url('../img/light_noise_diagonal.png');
 
 
 }
@@ -42,13 +43,14 @@ p span {
 
 h1 {
 	clear:both;
-    color: #FFF; 
+    color: #008B8B; 
 	/*alterado*/
 	padding-top: 14px;
     padding-bottom: 10px;
 	//margin-left:70px;
-	margin-bottom: 20px;
-	border-bottom:3px solid #FFF;
+	margin-bottom: 50px;
+	margin-top: 20px;
+	border-bottom:3px solid #008B8B;
 	/*end*/
 }
 
@@ -208,7 +210,7 @@ h1 {
 	border:1px solid #d0d0d0;
 	border-top-color:#ececec;
 	border-bottom-color:#909090;
-	background:#ffff00;
+	background:#008B8B;
 	background: -moz-linear-gradient(top, #fff 60%, #e7e7e7);
 	background: -webkit-linear-gradient(top, #fff 60%, #e7e7e7);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e7e7e7');
@@ -229,7 +231,7 @@ h1 {
 
 #endereco {
 	float: right;
-	background: #2fb2c8;
+	background: #008B8B;
 	padding-left: 8px;
 	margin-top: 20px;
 	width: 450px;
@@ -238,7 +240,7 @@ h1 {
 
 #dados {
 	float: left;
-	background: #2fb2c8;
+	background: #008B8B;
 	padding-left: 8px;
 	margin-top: 20px;
 	width: 380px;
