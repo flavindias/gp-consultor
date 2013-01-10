@@ -37,15 +37,15 @@
 			<div class="actions">
 				<td>
 					<?php echo $this->Html->link(
-					$this->Html->image("view.png", array('alt' => 'Ver')), array('action' => 'view', $consul['Consultant']['id']), array('escape'=>false, 'id'=>'link'))?>
+					$this->Html->image("view.png", array('alt' => 'Ver')), array('action' => 'view', $consul['Consultant']['id']), array('escape'=>false, 'class'=>'link'))?>
 
 					<?php echo $this->Html->link(
 					$this->Html->image("edit.png", array('alt' => 'Editar')), array('action' => 'edit', $consul['Consultant']['id']),
-					array('escape'=>false, 'id'=>'link'))?>
+					array('escape'=>false, 'class'=>'link'))?>
 
 					<?php echo $this->Html->link(
 					$this->Html->image("delete.png", array('alt' => 'Remover')), array('action' => 'delete', $consul['Consultant']['id']),
-					array('escape'=>false, 'id'=>'link'), "Confirmar exclusão do consultor ". $consul['Consultant']['name'] . "?");
+					array('escape'=>false, 'class'=>'link'), "Confirmar exclusão do consultor ". $consul['Consultant']['name'] . "?");
 					
 					echo $this->Session->flash();
 					?></td>
