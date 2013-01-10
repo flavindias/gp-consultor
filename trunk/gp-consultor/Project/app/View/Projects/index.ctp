@@ -39,8 +39,6 @@
 					<?php echo $this->Html->link(
 					$this->Html->image("delete.png", array('alt' => 'Remover')), array('action' => 'delete', $project['Project']['id']),
 					array('escape'=>false, 'id'=>'link'), "Confirmar exclusão da empresa ". $project['Project']['name'] . "?");
-					
-					echo $this->Session->flash();
 					?></td>
 			</div>
 		</tr>
