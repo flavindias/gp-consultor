@@ -19,8 +19,8 @@
 					?>
 						
 						<?php echo $this->Form->input('Project.name', array('label' => 'Nome: ','required'=>'required', 'id'=>'name')); ?>
-						<?php echo $this->Form->input('Project.description', array('label' => 'Descrição: ','required'=>'required', 'id'=>'description')); ?>
-						<?php echo $this->Form->input('Project.acronym', array('label' => 'Abreviação do Nome: ','required'=>'required')); ?>
+						<?php echo $this->Form->input('Project.description', array('label' => 'Descrição: ', 'id'=>'description')); ?>
+						<?php echo $this->Form->input('Project.acronym', array('label' => 'Abreviação do Nome: ')); ?>
 						<?php echo $this->Form->input('Project.time_a', array('label' => 'Horas A: ','required'=>'required','id'=>'time_a',)); ?>
 						<?php echo $this->Form->input('Project.time_b', array('label' => 'Horas B: ', 'id'=>'time_b')); ?>
 						<?php echo $this->Form->input('Project.time_c', array('label' => 'Horas C: ', 'id'=>'time_c')); ?>
