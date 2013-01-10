@@ -1,7 +1,7 @@
 
 <div id="consultantindex">
 
-	<table cellpadding="0" cellspacing="0">
+	<table class="tabela-vazia" cellpadding="0" cellspacing="0">
 		<tr>
 			<th>Nome</th>
 			<th>CPF</th>
