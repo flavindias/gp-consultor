@@ -1497,3 +1497,6 @@
 2013-01-10 19:03:51 Error: [MissingControllerException] Controller class JsController could not be found.
 #0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-10 21:09:42 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
