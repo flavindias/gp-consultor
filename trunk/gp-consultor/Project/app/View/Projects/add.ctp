@@ -7,6 +7,7 @@
 					<legend>Dados do Projeto</legend>
 					
 					<?php 
+						
 						foreach ($projects as $project) 
 							{
 								$list_projects[$project['Project']['id']] =$project['Project']['name'];
@@ -16,6 +17,14 @@
 							{
 								$list_companies[$company['Company']['id']] =$company['Company']['name'];
 							};
+						
+						if(!isset($list_projects)){
+							$list_projects['none'] = 'Nenhum Projeto Cadastrado';
+						}
+						elseif(!isset($list_companies)){
+							$list_companies['none'] = 'Nenhuma Empresa Cadastrada';
+						}
+						
 					?>
 						
 						<?php echo $this->Form->input('Project.name', array('label' => 'Nome: ','required'=>'required', 'id'=>'name')); ?>
