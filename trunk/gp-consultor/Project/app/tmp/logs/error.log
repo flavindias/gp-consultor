@@ -1453,3 +1453,6 @@
 2013-01-09 22:36:27 Error: [MissingControllerException] Controller class ImgController could not be found.
 #0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-10 00:44:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

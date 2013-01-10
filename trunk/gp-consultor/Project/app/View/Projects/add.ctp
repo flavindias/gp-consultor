@@ -2,7 +2,7 @@
 <h1>Cadastrar Projeto</h1>
 <?php //provavelmente na view add, ou o equivalente para adicionar a pessoa
 		echo $this->Form->create('Project', array('action' => 'add')); ?>
-			<div class="left">
+			<div id="dadospessoais">
 				<fieldset id="dados_pessoais">
 					<legend>Dados do Projeto</legend>
 					

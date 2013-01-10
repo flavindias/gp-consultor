@@ -71,7 +71,7 @@
    {
 		$this->Consultant->id = $id;
 		if($this->Consultant->saveField("removed", "true")){
-			$this->Session->setFlash('Consultor foi deletado.');
+			$this->Session->setFlash('O consultor foi deletado!');
 			$this->redirect(array('action' => 'index'));
 		}
    }
