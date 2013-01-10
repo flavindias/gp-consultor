@@ -15,7 +15,7 @@
  	
  	public function index(){
  		$this -> layout = 'IndexConsultants';
- 		$this -> set ('consultants', $this-> Consultant->find('all'));
+ 		$this -> set ('consultants', $this-> Consultant->find('all', array('conditions'=> array('Consultant.removed !=' => 1))));
  	}
  	
  	public function view($id = null){
