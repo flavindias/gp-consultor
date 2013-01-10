@@ -1,5 +1,5 @@
 
-<div class="consultantindex">
+<div id="consultantindex">
 
 	<table cellpadding="0" cellspacing="0">
 		<tr>
