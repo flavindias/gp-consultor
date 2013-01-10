@@ -8,8 +8,8 @@
 		<?php echo $this->Html->css('demo'); ?>
 		<?php echo $this->Html->script('jquery-1.7.1.min'); ?>
 	    <?php echo $this->Html->script('jquery-ui-1.8rc3.custom.min'); ?>
-	    <?php echo $this->Html->script('jquery.weekcalendar') ?>
-	    <?php echo $this->Html->script('demo') ?>
+	    <?php echo $this->Html->script('jquery.weekcalendar'); ?>
+	    <?php echo $this->Html->script('demo'); ?>
 	    <?php echo $this->Html->script('aplicacao'); ?>
 	</head>
 <body> 

@@ -1,6 +1,7 @@
 //Quando o documento (pagina) estiver Ready(carregado) ele chama as funções
-$('document').ready(function(){
 
+$('document').ready(function(){
+    
 	//Menu
 	var flag = false;
 	$('#botao_home').click(function(e){

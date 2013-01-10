@@ -8,7 +8,7 @@
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright 2013 -  BSI UFRPE 4º Periodo, 2012.2
+ * @copyright     Copyright 2013 -  BSI UFRPE 4ï¿½ Periodo, 2012.2
  * @link          http://cakephp.org CakePHP(tm) Project
  * @package       app.webroot.css
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
@@ -44,6 +44,8 @@ table {
 }
 
 td, th {
+	margin-top:0px;
+	top:0px;
 	letter-spacing: 1px;
 	border-left: 1px solid #C1DAD7;
 	border-right: 1px solid #C1DAD7;
