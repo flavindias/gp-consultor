@@ -14,7 +14,6 @@ fieldset{
 	padding-left: 20px;
 	float: left;
 	border-width: 30px;
-	color: 333333;
 	width: 46%;
 	border: 30px;
 	border-color: #FFFFFF;
@@ -274,4 +273,24 @@ h1 {
 
 #consultantindex{
 	margin-left: 420px;
+}
+
+#dados_pessoais{
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 46%;
+	border: 30px;
+	border-color: #FFFFFF;
+	background-color: #e6eef1;
+}
+
+#endereço{
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 46%;
+	border: 30px;
+	border-color: #FFFFFF;
+	background-color: #e6eef1;
 }
