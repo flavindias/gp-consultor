@@ -66,5 +66,17 @@
  		$this-> set ('companies',$this->Project->find('all'));
  	}
  	
+ 	public function view($id = null){
+ 		if (!$id) {
+            throw new NotFoundException(__('Invalid post'));
+        }
+ 		$this -> layout = 'base';
+ 		$Projects =  $this->Project->findById($id);
+ 		if (!$Projects) {
+            throw new NotFoundException(__('Invalid post'));
+        }
+        
+        $this ->set('projects',$Projects);
+ 	}
  }
 ?>
