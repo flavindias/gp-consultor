@@ -34,8 +34,8 @@
 			<td class="telefone"><?php echo $consul['Consultant']['phone1']; ?></td>
 			<td class="telefone"><?php echo $consul['Consultant']['phone2']; ?>
 			<td class="cor" style="background-color:<?php echo $consul['Consultant']['acronym_color']; ?>"><?php echo $consul['Consultant']['acronym_color']; ?>
-			<div class="actions">
-				<td>
+			<div>
+				<td class="actions">
 					<?php echo $this->Html->link(
 					$this->Html->image("view.png", array('alt' => 'Ver')),
 					array('action' => 'view', $consul['Consultant']['id']),
