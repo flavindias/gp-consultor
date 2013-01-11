@@ -14,11 +14,11 @@ fieldset{
 	padding-left: 20px;
 	float: left;
 	border-width: 30px;
-	color: white;
+	color: 333333;
 	width: 46%;
 	border: 30px;
 	border-color: #FFFFFF;
-	background-color: #2fb2c8;
+	background-color: #e6eef1;
 
 }
 input{
@@ -229,10 +229,14 @@ h1 {
 }
 
 /*========View=========*/
+.icon-action{
+	float: right;
+	padding-left: 1%;
+}
 
 #endereco {
 	float: right;
-	background: #008B8B;
+	background: #e6eef1;
 	padding-left: 8px;
 	margin-top: 20px;
 	width: 450px;
@@ -241,7 +245,7 @@ h1 {
 
 #dados {
 	float: left;
-	background: #008B8B;
+	background: #e6eef1;
 	padding-left: 8px;
 	margin-top: 20px;
 	width: 380px;
@@ -256,6 +260,7 @@ h1 {
 }
 
 #titulodados, #tituloendereco{
+	color: #333333;
 	text-align: center;
 }
 
@@ -264,7 +269,7 @@ h1 {
 }
 
 #colorview{
-	width:40%;
+	width:20%;
 }
 
 #consultantindex{
