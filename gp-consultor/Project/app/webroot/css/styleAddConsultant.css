@@ -7,8 +7,16 @@ body{
 	font-weight: 100;
 	margin:0px;
 	background-image:url('../img/light_noise_diagonal.png');
+}
 
-
+fieldset{
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 950px;
+	border: 30px;
+	border-color: #FFFFFF;
+	background-color: #ADD8E6;
 }
 
 input{
@@ -226,7 +234,7 @@ h1 {
 
 #endereco {
 	float: right;
-	background: #e6eef1;
+	background: #ADD8E6;
 	padding-left: 8px;
 	margin-top: 20px;
 	width: 450px;
@@ -235,7 +243,7 @@ h1 {
 
 #dados {
 	float: left;
-	background: #e6eef1;
+	background: #ADD8E6;
 	padding-left: 8px;
 	margin-top: 20px;
 	width: 380px;
@@ -273,7 +281,7 @@ h1 {
 	width: 46%;
 	border: 30px;
 	border-color: #FFFFFF;
-	background-color: #e6eef1;
+	background-color: #ADD8E6;
 }
 
 #endereço{
@@ -283,5 +291,6 @@ h1 {
 	width: 46%;
 	border: 30px;
 	border-color: #FFFFFF;
-	background-color: #e6eef1;
+	background-color: #ADD8E6;
 }
+
