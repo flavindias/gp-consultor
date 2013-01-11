@@ -39,7 +39,9 @@ $('document').ready(function(){
 	//Buscar Endereço ao digitar o CEP
 	$('#zip_code').keypress(function(){
 		var cep = $(this).val();
-		cep = cep.replace('-','').replace('.','').cep.replace('_','');
+		cep = cep.replace('-','');
+		cep = cep.replace('.','');
+		cep = cep.replace('_','');
 		var tamanho = cep.length;
 		if(tamanho == 8){
 			//Função de buscar endereço pelo cep
