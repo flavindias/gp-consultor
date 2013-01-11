@@ -16,7 +16,8 @@
 	
 </h1>
 
-<div id="dadosProjetoView"> 
+<div> 
+	<fieldset id="dadosProjetoView">
 	<h2 id="titulodados"> Dados Projeto </h2>
 	<p><span>Nome: </span> <?php echo $project['Project']['name']; ?></p>
 	<p><span>Descrição: </span><?php echo $project['Project']['description']; ?></p>
@@ -30,4 +31,5 @@
 					$this->Html->image("view.png", array('alt' => 'Ver')), array('action' => '../companies/view', $project['Project']['company_id']), array('escape'=>false, 'id'=>'link'))?>
 	
 	</p>
+	</fieldset>
 </div>
