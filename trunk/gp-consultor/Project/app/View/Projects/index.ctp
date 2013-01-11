@@ -27,8 +27,9 @@
 		<tr <?php echo $class; ?>>
 			<td class="nome"><?php echo $project['Project']['name']; ?></td>
 			<td class="sigla"><?php echo $project['Project']['acronym']; ?></td>
-			<div class="actions">
-				<td>
+			<div id="actionsProject">
+			<td>
+				<div id="actionsProject">
 					<?php echo $this->Html->link(
 					$this->Html->image("view.png", array('alt' => 'Ver')), array('action' => 'view', $project['Project']['id']), array('escape'=>false, 'id'=>'link'))?>
 
@@ -39,8 +40,10 @@
 					<?php echo $this->Html->link(
 					$this->Html->image("delete.png", array('alt' => 'Remover')), array('action' => 'delete', $project['Project']['id']),
 					array('escape'=>false, 'id'=>'link'), "Confirmar exclusão do projeto ". $project['Project']['name'] . "?");
-					?></td>
-			</div>
+					?>
+				</div>
+			</td>
+			
 		</tr>
 		<?php } ?>
 	</table>
