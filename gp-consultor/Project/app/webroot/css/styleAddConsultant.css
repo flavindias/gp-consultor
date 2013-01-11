@@ -10,16 +10,7 @@ body{
 
 
 }
-fieldset{
-	padding-left: 20px;
-	float: left;
-	border-width: 30px;
-	width: 46%;
-	border: 30px;
-	border-color: #FFFFFF;
-	background-color: #e6eef1;
 
-}
 input{
 	width: 100%;
 	height: 20px;
