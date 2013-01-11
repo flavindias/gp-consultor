@@ -541,21 +541,22 @@ div.dadosSponsor, div.dadosFinancial, div.dadosSepg {
 
 
 #dados_projeto{
-	padding-left: 20px;
 	float: left;
-	border-width: 30px;
-	width: 46%;
-	border: 30px;
-	border-color: #FFFFFF;
-	background-color: #e6eef1;
-}
-
-#dadosProjetoView{
 	background: #2fb2c8;
 	padding-left: 8px;
 	margin-top: 20px;
-	width: 600px;
-	margin-left: 40px;
+	width: 380px;
+	margin-left: 140px;
+}
+
+#dadosProjetoView{
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 500px !important;
+	border: 30px;
+	border-color: #FFFFFF;
+	background-color: #ADD8E6;
 }
 
 .sigla{

@@ -16,20 +16,20 @@
 	
 </h1>
 
-<div> 
-	<fieldset id="dadosProjetoView">
-	<h2 id="titulodados"> Dados Projeto </h2>
-	<p><span>Nome: </span> <?php echo $project['Project']['name']; ?></p>
-	<p><span>Descrição: </span><?php echo $project['Project']['description']; ?></p>
-	<p><span>Abreviação: </span><?php echo $project['Project']['acronym']; ?></p>
-	<p><span>Hora A: </span><?php echo $project['Project']['time_a']; ?> hrs</span></p>
-	<p><span>Hora B: </span><?php echo $project['Project']['time_b']; ?> hrs</p>
-	<p><span>Hora C: </span><?php echo $project['Project']['time_c']; ?> hrs</p>
-	<p><span>Projeto Pai: </span><?php echo $project['Project']['parent_project_id']; ?></p>
-	<p><span>Empresa: </span><?php echo $nameCompany; ?>
-	<?php echo $this->Html->link(
+<div id="dadosProjetoView"> 
+	<fieldset>
+		<h2 id="titulodados"> Dados Projeto </h2>
+		<p><span>Nome: </span> <?php echo $project['Project']['name']; ?></p>
+		<p><span>Descrição: </span><?php echo $project['Project']['description']; ?></p>
+		<p><span>Abreviação: </span><?php echo $project['Project']['acronym']; ?></p>
+		<p><span>Hora A: </span><?php echo $project['Project']['time_a']; ?> hrs</span></p>
+		<p><span>Hora B: </span><?php echo $project['Project']['time_b']; ?> hrs</p>
+		<p><span>Hora C: </span><?php echo $project['Project']['time_c']; ?> hrs</p>
+		<p><span>Projeto Pai: </span><?php echo $project['Project']['parent_project_id']; ?></p>
+		<p><span>Empresa: </span><?php echo $nameCompany; ?>
+		<?php echo $this->Html->link(
 					$this->Html->image("view.png", array('alt' => 'Ver')), array('action' => '../companies/view', $project['Project']['company_id']), array('escape'=>false, 'id'=>'link'))?>
 	
-	</p>
+		</p>
 	</fieldset>
 </div>
