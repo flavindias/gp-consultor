@@ -14,7 +14,7 @@
  	
  	public function index(){
  		$this -> layout = 'IndexProjects';
- 		$this -> set ('projects', $this-> Project->find('all'));
+ 		$this -> set ('projects', $this-> Project->find('all', array('conditions'=> array('Project.removed !=' => 1))));
  	}
  	
  	public function add(){
@@ -62,21 +62,28 @@
 		}
 	}
  	
- 	public function GetCompanies(){
- 		$this-> set ('companies',$this->Project->find('all'));
- 	}
  	
  	public function view($id = null){
+		$this -> layout = 'base';
  		if (!$id) {
             throw new NotFoundException(__('Invalid post'));
         }
- 		$this -> layout = 'base';
+
  		$Projects =  $this->Project->findById($id);
+ 		
  		if (!$Projects) {
             throw new NotFoundException(__('Invalid post'));
         }
         
-        $this ->set('projects',$Projects);
+        $nameCompany = $this->GetNameCompany($Projects['Project']['company_id']);
+        $this -> set('nameCompany', $nameCompany);
+        $this ->set('project',$Projects);
+ 	}
+ 	
+ 	private function GetNameCompany($id){
+ 		$name = $this->Project->Company->findById($id);
+ 		return $name['Company']['name'];
+ 		
  	}
  }
 ?>

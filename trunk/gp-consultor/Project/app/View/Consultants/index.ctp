@@ -49,7 +49,8 @@
 					<?php echo $this->Html->link(
 					$this->Html->image("delete.png",array('alt' => 'Remover')),
 					array('action' => 'delete', $consul['Consultant']['id']),
-					array('escape'=>false, 'class'=>'link'));
+					array('escape'=>false, 'class'=>'link'),
+					"Confirmar exclusão do consultor ". $consul['Consultant']['name'] . "?");
 					?></td>
 			</div>
 		</tr>
