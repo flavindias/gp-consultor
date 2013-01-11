@@ -1,12 +1,12 @@
 
 <h1 id="titulo">Consultor - <?php echo $consultant['Consultant']['name']; ?> 
-<?php echo $this->Html->link(
+<span class="icon-action"> <?php echo $this->Html->link(
 $this->Html->image("edit.png", array("alt" => "Editar")),'edit/'.$consultant['Consultant']['id'],
-array('escape'=>false)) ?> 
-<?php echo $this->Html->link(
+array('escape'=>false)) ?></span> 
+<span class="icon-action"><?php echo $this->Html->link(
 $this->Html->image("delete.png", array("alt" => "Deletar")),
 array('action' => 'delete', $consultant['Consultant']['id']),
-array('escape'=>false),"Você quer excluir realmente ?");?>
+array('escape'=>false),"Você quer excluir realmente ?");?></spam>
 
 </h1>
 
@@ -15,7 +15,7 @@ array('escape'=>false),"Você quer excluir realmente ?");?>
 <p><span>Nome: </span> <?php echo $consultant['Consultant']['name']; ?></p>
 <p><span>CPF: </span><?php echo $consultant['Consultant']['cpf']; ?></p>
 <p><span>Abreviação: </span><?php echo $consultant['Consultant']['acronym']; ?></p>
-<p><div id="colorview" style="background-color:<?php echo $consultant['Consultant']['acronym_color']; ?>"><?php echo $consultant['Consultant']['acronym_color']; ?></div></p>
+<p><span>Cor: </span><spam id="colorview" style="background-color:<?php echo $consultant['Consultant']['acronym_color']; ?>"><?php echo $consultant['Consultant']['acronym_color']; ?></spam></p>
 <p><span>Telefone: </span><?php echo $consultant['Consultant']['phone1']; ?></p>
 <p><span>Celular: </span><?php echo $consultant['Consultant']['phone2']; ?></p>
 <p><span>E-mail: </span><?php echo $consultant['Consultant']['email']; ?></p>
