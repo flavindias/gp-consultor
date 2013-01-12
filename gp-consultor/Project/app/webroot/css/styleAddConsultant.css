@@ -309,6 +309,64 @@ h1 {
 	margin-left: 0px;
 }
 
+/*
 
+Empresa
+
+*/
+
+
+#dadosEmpresa{
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 46%;
+	border: 30px;
+	border-color: #FFFFFF;
+	background-color: #e6eef1;
+}
+
+#dadosEndereco{
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 46%;
+	border: 30px;
+	border-color: #FFFFFF;
+	background-color: #e6eef1;
+
+}
+#dadosSponsor{
+	margin-top: -100px;
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 46%;
+	border: 30px;
+	border-color: #FFFFFF;
+	background-color: #e6eef1;
+
+}
+#dadosFinanceiros{
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 46%;
+	border: 30px;
+	border-color: #FFFFFF;
+	background-color: #e6eef1;
+
+}
+#dadosSepg{
+	margin-top: -100px;
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 46%;
+	border: 30px;
+	border-color: #FFFFFF;
+	background-color: #e6eef1;
+
+}
 
 
