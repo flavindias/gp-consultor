@@ -9,7 +9,9 @@
 					<?php 
 						foreach ($projects as $project) 
 							{
-								$list_projects[$project['Project']['id']] =$project['Project']['name'];
+								if( $project['Project']['id'] != $id ){
+									$list_projects[$project['Project']['id']] =$project['Project']['name'];
+								}
 							};
 					
 						foreach ($companies as $company) 
@@ -23,7 +25,7 @@
 							$list_companies['none'] = 'Nenhuma Empresa Cadastrada';
 						}
 					?>
-						
+						<?php echo $this->Form->input('Project.id', array('type' => 'hidden')); ?>
 						<?php echo $this->Form->input('Project.name', array('label' => 'Nome: ','required'=>'required', 'id'=>'name')); ?>
 						<?php echo $this->Form->input('Project.description', array('label' => 'Descrição: ', 'id'=>'description')); ?>
 						<?php echo $this->Form->input('Project.acronym', array('label' => 'Abreviação do Nome: ')); ?>
@@ -35,7 +37,6 @@
 						
 				</fieldset>
 			</div>
-		
-
-			<?php echo $this->Form->end('Confirmar Cadastro'); ?>
+			
+			<?php echo $this->Form->end('ATUALIZAR'); ?>
 	

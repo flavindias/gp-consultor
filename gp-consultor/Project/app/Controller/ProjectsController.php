@@ -25,8 +25,8 @@
  			}
  		}
  		else{
- 			$this-> set ('projects',$this->Project->find('all'));
- 			$this-> set ('companies',$this->Project->Company->find('all'));
+ 			$this-> set ('projects',$this->Project->find('all'), array('conditions'=> array('Project.removed !=' => 1)));
+ 			$this-> set ('companies',$this->Project->Company->find('all', array('conditions'=> array('Project.removed !=' => 1))));
  		}
  	}
 	
@@ -42,11 +42,11 @@
 	        throw new NotFoundException(__('Invalid post'));
 	    }
 		if ($this->request->is('get')) {
-			$this-> set ('projects',$this->Project->find('all'));
- 			$this-> set ('companies',$this->Project->Company->find('all'));
 			$this->request->data = $this->Project->read();
-		} 
-		else {
+			$this-> set ('projects',$this->Project->find('all', array('conditions'=> array('Project.removed !=' => 1, 'Project.id !=' => $id))));
+			$this-> set ('companies',$this->Project->Company->find('all', array('conditions'=> array('Company.removed !=' => 1))));
+		}
+		else{
 			$this->Project->id = $id;
 			if ($this->Project->saveAll($this->request->data)) {
 				$this->redirect(array('action' => 'index'));
