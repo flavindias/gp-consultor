@@ -540,25 +540,6 @@ div.dadosSponsor, div.dadosFinancial, div.dadosSepg {
 /*=========Projects===========*/
 
 
-#dados_projeto{
-	float: left;
-	background: #2fb2c8;
-	padding-left: 8px;
-	margin-top: 20px;
-	width: 380px;
-	margin-left: 140px;
-}
-
-#dadosProjetoView{
-	padding-left: 20px;
-	float: left;
-	border-width: 30px;
-	width: 500px !important;
-	border: 30px;
-	border-color: #FFFFFF;
-	background-color: #ADD8E6;
-}
-
 .sigla{
 	width: 250px;
 }

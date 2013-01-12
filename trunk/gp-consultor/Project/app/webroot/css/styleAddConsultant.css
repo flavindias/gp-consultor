@@ -9,15 +9,7 @@ body{
 	background-image:url('../img/light_noise_diagonal.png');
 }
 
-fieldset{
-	padding-left: 20px;
-	float: left;
-	border-width: 30px;
-	width: 950px;
-	border: 30px;
-	border-color: #FFFFFF;
-	background-color: #ADD8E6;
-}
+
 
 input{
 	width: 100%;
@@ -175,6 +167,7 @@ h1 {
 	margin-left:75px;
 }
 
+
 /* =======================
 ==========================
 ====== CONSULTOR =========
@@ -234,7 +227,7 @@ h1 {
 
 #endereco {
 	float: right;
-	background: #ADD8E6;
+	background: #e6eef1;
 	padding-left: 8px;
 	margin-top: 20px;
 	width: 450px;
@@ -243,7 +236,7 @@ h1 {
 
 #dados {
 	float: left;
-	background: #ADD8E6;
+	background: #e6eef1;
 	padding-left: 8px;
 	margin-top: 20px;
 	width: 380px;
@@ -281,7 +274,7 @@ h1 {
 	width: 46%;
 	border: 30px;
 	border-color: #FFFFFF;
-	background-color: #ADD8E6;
+	background-color: #e6eef1;
 }
 
 #endereço{
@@ -291,6 +284,31 @@ h1 {
 	width: 46%;
 	border: 30px;
 	border-color: #FFFFFF;
-	background-color: #ADD8E6;
+	background-color: #e6eef1;
 }
+
+#dados_projeto{
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 950px;
+	border: 30px;
+	border-color: #e6eef1;
+	background-color: #e6eef1;
+	margin-left: 0px;
+}
+
+#dadosProjetoView{
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 950px;
+	border: 30px;
+	border-color: #e6eef1;
+	background-color: #e6eef1;
+	margin-left: 0px;
+}
+
+
+
 
