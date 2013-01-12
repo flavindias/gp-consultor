@@ -1,6 +1,6 @@
 <h1>Cadastrar Empresa</h1>
 
-<div class="companies form">
+<div class="companiesForm">
 	<?php echo $this->Form->create('Company', array('action' => 'add')); ?>
 	
 	
@@ -16,7 +16,7 @@
 			?>
 		</fieldset>
 		
-		<fieldset id="dadosEndereço">
+		<fieldset id="dadosEndereco">
 			<legend>Endereço</legend>
 			<?php
 				echo $this->Form->input('Address.zip_code', array('label' => 'CEP:', 'id' => 'zip_code', 'required'=>'required', 'onBlur' => 'getEndereco()'));                
