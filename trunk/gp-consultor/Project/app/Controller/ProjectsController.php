@@ -42,13 +42,13 @@
 	        throw new NotFoundException(__('Invalid post'));
 	    }
 		if ($this->request->is('get')) {
+			$this-> set ('projects',$this->Project->find('all'));
+ 			$this-> set ('companies',$this->Project->Company->find('all'));
 			$this->request->data = $this->Project->read();
 		} 
 		else {
 			$this->Project->id = $id;
 			if ($this->Project->saveAll($this->request->data)) {
-				
-				$this->Session->setFlash('Projeto foi editado.');
 				$this->redirect(array('action' => 'index'));
 			}
 		}
