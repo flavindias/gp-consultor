@@ -25,8 +25,8 @@
  			}
  		}
  		else{
- 			$this-> set ('projects',$this->Project->find('all'), array('conditions'=> array('Project.removed !=' => 1)));
- 			$this-> set ('companies',$this->Project->Company->find('all', array('conditions'=> array('Project.removed !=' => 1))));
+ 				$this-> set ('companies',$this->Project->Company->find('all', array('conditions'=> array('Company.removed !=' => 1))));
+ 				$this-> set ('projects',$this->Project->find('all'), array('conditions'=> array('Project.removed !=' => 1)));
  		}
  	}
 	
