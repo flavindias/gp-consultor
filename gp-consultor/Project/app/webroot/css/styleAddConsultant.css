@@ -309,11 +309,56 @@ h1 {
 	margin-left: 0px;
 }
 
-/*
+/*=======Add e edit Project========*/
 
-Empresa
+#nameProject{
+	width: 70%;
+	height: 20px;
+}
 
-*/
+#description{
+	width: 66.6%;
+	height: 20px;
+}
+
+#acronymProject{
+	width: 57.2%;
+	height: 20px;
+}
+
+#time_a{
+	width: 68.1%;
+	height: 20px;
+}
+
+#time_b{
+	width: 68.1%;
+	height: 20px;
+}
+
+#time_c{
+	width: 68.1%;
+	height: 20px;
+}
+
+#parent_project{
+	width: 65.8%;
+	height: 25px;
+}
+
+#company{
+	width: 61%;
+	height: 25px;
+}
+
+/*===========Add e edit consultant========*/
+
+#state{
+	width:463px;
+	height: 25.7px;
+}
+
+/*========Empresa=============*/
 
 
 #dadosEmpresa{

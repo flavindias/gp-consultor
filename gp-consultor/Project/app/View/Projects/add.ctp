@@ -24,13 +24,20 @@
 						}
 					?>
 						
-						<?php echo $this->Form->input('Project.name', array('label' => 'Nome: ','required'=>'required', 'id'=>'name')); ?>
+						<?php echo $this->Form->input('Project.name', array('label' => 'Nome: ','required'=>'required', 'id'=>'nameProject')); ?>
+						<p>  </p>
 						<?php echo $this->Form->input('Project.description', array('label' => 'Descrição: ', 'id'=>'description')); ?>
-						<?php echo $this->Form->input('Project.acronym', array('label' => 'Abreviação do Nome: ')); ?>
+						<p>  </p>
+						<?php echo $this->Form->input('Project.acronym', array('label' => 'Abreviação do Nome: ', 'id'=>'acronymProject')); ?>
+						<p>  </p>
 						<?php echo $this->Form->input('Project.a_hours', array('label' => 'Horas A: ','required'=>'required','id'=>'time_a',)); ?>
+						<p>  </p>
 						<?php echo $this->Form->input('Project.b_hours', array('label' => 'Horas B: ', 'id'=>'time_b')); ?>
+						<p>  </p>
 						<?php echo $this->Form->input('Project.c_hours', array('label' => 'Horas C: ', 'id'=>'time_c')); ?>
-						<?php echo $this->Form->input('Project.parent_project_id',array('options' => $list_projects,'type' => 'select', 'empty' => 'Selecione','label' => 'Projeto Pai: ', 'id' => 'parent_project')); ?>					
+						<p>  </p>
+						<?php echo $this->Form->input('Project.parent_project_id',array('options' => $list_projects,'type' => 'select', 'empty' => 'Selecione','label' => 'Projeto Pai: ', 'id' => 'parent_project')); ?>
+						<p>  </p>					
 						<?php echo $this->Form->input('Project.company_id',array('options' => $list_companies,'type' => 'select', 'empty' => 'Selecione','label' => 'Projeto Empresa: ', 'id' => 'company', 'required'=>'required')); ?>
 						
 				</fieldset>
