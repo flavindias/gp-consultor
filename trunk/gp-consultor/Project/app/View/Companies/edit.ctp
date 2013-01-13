@@ -17,7 +17,7 @@
             ?>
         </fieldset>
         
-        <fieldset id="dadosEndereço">
+        <fieldset id="dadosEndereco">
             <legend>Endereço</legend>
             <?php
                 echo $this->Form->input('Address.id', array('type' => 'hidden'));
