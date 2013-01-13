@@ -64,8 +64,7 @@
         </fieldset>
     
         <?php 
-        echo $this->Form->end('ATUALIZAR'); 
-        echo $this->Form->button('RESTAURAR', array('type'=>'reset', 'id'=>'botaoRestaurar'));
+        echo $this->Form->end('Atualizar'); 
         ?>
     </div>
 </div>
