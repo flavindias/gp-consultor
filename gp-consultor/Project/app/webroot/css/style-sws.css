@@ -519,7 +519,7 @@ p {
 	background-color: #bcdae0;
 }
 
-#dados_projeto,#horas{
+#dados_projeto{
 	padding-left: 20px;
 	float: left;
 	border-width: 30px;
@@ -528,10 +528,19 @@ p {
 	border-color: #bcdae0;
 	background-color: #bcdae0;
 	margin-left: 0px;
+	padding-bottom: 50px;
 }
 
-#horas {
-	float:left;
+#horas{
+	padding-left: 20px;
+	float: left;
+	border-width: 30px;
+	width: 46%;
+	border: 30px;
+	border-color: #bcdae0;
+	background-color: #bcdae0;
+	margin-left: 0px;
+	padding-bottom: 60px;
 }
 
 #dadosProjetoView{
@@ -546,10 +555,21 @@ p {
 }
 
 
-
 #state{
 	width:463px;
 	height: 25.7px;
 }
 
+#company{
+	width: 465px;
+	height: 25px;
+}
 
+#parent_project{
+	width: 465px;
+	height: 25px;
+}
+
+#horas{
+	padding-bottom: 
+}

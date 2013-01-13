@@ -38,6 +38,8 @@
 					<?php echo $this->Form->input('Project.b_hours', array('min'=>"1", 'max'=>"5",'label' => 'Horas B: ', 'id'=>'hora_b')); ?>
 					
 					<?php echo $this->Form->input('Project.c_hours', array('min'=>"1", 'max'=>"5",'label' => 'Horas C: ', 'id'=>'hora_c')); ?>
+					<p> </p>
+					<p> </p>
 					<div id="total-de-horas">Total de horas : <p style="color:#000"></p></div>
 				</fieldset>
 			</div>
