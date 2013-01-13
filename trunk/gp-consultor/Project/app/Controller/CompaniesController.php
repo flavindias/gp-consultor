@@ -7,7 +7,8 @@ class CompaniesController extends AppController {
 	public $name = 'Companies';
 	
 	public function index(){
-		$this -> layout = 'IndexCompanies';
+		$this->set('title_for_layout', 'Empresas');
+		$this -> layout = 'index';
 		$this->set('companies', $this->Company->find('all', array('conditions'=> array('Company.removed !=' => 1))));		
 	}
 	

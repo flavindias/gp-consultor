@@ -34,6 +34,7 @@ $('document').ready(function(){
 	$("#phone_financial").mask("(99)9999-9999");
 	$("#phone_sponsor").mask("(99)9999-9999");
 	$("#phone_sepg").mask("(99)9999-9999");		
+	
 	//end mascaras
 
 	//Buscar Endereço ao digitar o CEP
@@ -72,8 +73,11 @@ $('document').ready(function(){
 			}
 		});
 	 
+	 //total de horas
+	 SomarHorasProjeto();
+	 $('#horas input').blur(function(){SomarHorasProjeto()});
 	
-
+	 
 	
 	
 });
@@ -91,3 +95,19 @@ function checkAcronym(src){
 			}
 	});
 };
+
+//Somar horas do projeto
+function SomarHorasProjeto(){
+	 var total = 0;
+	 if($('#hora_a').val() != ''){
+	 total = parseInt($('#hora_a').val());
+	 }
+	 if($('#hora_b').val() != ''){
+	 total = total + parseInt($('#hora_b').val());
+	 }
+	 if($('#hora_c').val() != ''){
+	 total = total + parseInt($('#hora_c').val());
+	 }
+	 $('#total-de-horas p').html(total);
+};
+

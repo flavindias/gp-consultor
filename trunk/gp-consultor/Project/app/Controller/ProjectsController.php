@@ -13,7 +13,8 @@
  	
  	
  	public function index(){
- 		$this -> layout = 'IndexProjects';
+		$this->set('title_for_layout', 'Projetos');
+ 		$this -> layout = 'index';
  		$this -> set ('projects', $this-> Project->find('all', array('conditions'=> array('Project.removed !=' => 1))));
  	}
  	
