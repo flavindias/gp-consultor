@@ -14,15 +14,16 @@
  	
  	
  	public function index(){
- 		$this -> layout = 'IndexConsultants';
+ 		$this->set('title_for_layout', 'Consultores');
+ 		$this -> layout = 'index';
  		$this -> set ('consultants', $this-> Consultant->find('all', array('conditions'=> array('Consultant.removed !=' => 1))));
  	}
  	
  	public function view($id = null){
+ 		 $this -> layout = 'base';
  		 if (!$id) {
             throw new NotFoundException(__('Invalid post'));
         }
- 		$this -> layout = 'base';
  		$consultant =  $this->Consultant->findById($id);
  		 if (!$consultant) {
             throw new NotFoundException(__('Invalid post'));
