@@ -19,7 +19,7 @@
 						if (!isset($list_projects)){
 							$list_projects['none'] = 'Nenhum Projeto Cadastrado';
 						}
-						elseif(!isset($list_companies)){
+						if(!isset($list_companies)){
 							$list_companies['none'] = 'Nenhuma Empresa Cadastrada';
 						}
 					?>
