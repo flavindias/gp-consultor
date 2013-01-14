@@ -7,9 +7,10 @@
 					<legend>Dados do Projeto</legend>
 					
 					<?php 
+					
 						foreach ($projects as $project) 
 							{
-								if( $project['Project']['id'] != $id ){
+								if( $project['Project']['id'] != $this->data['Project']['id'] ){
 									$list_projects[$project['Project']['id']] =$project['Project']['name'];
 								}
 							};
