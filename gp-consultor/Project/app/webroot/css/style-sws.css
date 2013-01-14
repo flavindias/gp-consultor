@@ -248,6 +248,11 @@ p span {
 	margin-top: 15px;
 }
 
+.telefone{
+	width: 125px;
+}
+
+
 .submit input, #botaoRestaurar{
 	clear:both;
 	width: 99%;
@@ -283,7 +288,7 @@ p span {
 }
 
 .nome{
-	width: 170px;
+	width: 300px;
 }
 
 
@@ -463,11 +468,34 @@ p {
 
 
 .sigla{
-	width: 250px;
+	width: 180px;
 }
 
 #actionsProject{
+	padding-left: 10px;
+}
+
+#tableProject{
+	width: 70%;
+}
+
+#nameTableProject{
+	width: 270px;
+}
+
+#viewProject{
+	width: 1%;
 	padding-left: 50px;
+}
+
+#editProject{
+	width: 1%;
+	padding-left: 30px;
+}
+
+#deleteProject{
+	width: 1%;
+	padding-left: 35px;
 }
 
 
@@ -546,7 +574,7 @@ p {
 	border-color: #bcdae0;
 	background-color: #bcdae0;
 	margin-left: 0px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 #horas{
@@ -558,7 +586,7 @@ p {
 	border-color: #bcdae0;
 	background-color: #bcdae0;
 	margin-left: 0px;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 }
 
 #dadosProjetoView{
@@ -570,6 +598,10 @@ p {
 	border-color: #bcdae0;
 	background-color: #bcdae0;
 	margin-left: -40px;
+}
+
+.legenda{
+	color: #008B8B;
 }
 
 

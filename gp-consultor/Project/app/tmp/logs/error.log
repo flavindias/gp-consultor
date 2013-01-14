@@ -1576,3 +1576,17 @@
 2013-01-12 20:25:24 Error: [MissingControllerException] Controller class JsController could not be found.
 #0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-14 17:22:26 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\site\sws\gp-consultor\Project\app\View\Projects\index.ctp, line 45]
+2013-01-14 17:22:26 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 C:\site\sws\gp-consultor\Project\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\site\sws\gp-...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\site\sws\gp-...', 45, Array)
+#2 C:\site\sws\gp-consultor\Project\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\site\sws\gp-...', 45, Array)
+#3 C:\site\sws\gp-consultor\Project\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 17:22:26 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-14 17:22:26 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

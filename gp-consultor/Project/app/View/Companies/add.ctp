@@ -6,7 +6,7 @@
 	
 	<div class="left">
 		<fieldset id="dadosEmpresa">
-			<legend>Dados da Empresa</legend>
+			<legend class="legenda">Dados da Empresa</legend>
 			<?php
 				echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj', 'required'=>'required', 'onblur' => 'checkCnpj(this)'));				
 				echo $this->Form->input('name', array('label' => 'Nome da empresa:', 'required'=>'required'));
@@ -17,7 +17,7 @@
 		</fieldset>
 		
 		<fieldset id="dadosEndereco">
-			<legend>Endereço</legend>
+			<legend class="legenda">Endereço</legend>
 			<?php
 				echo $this->Form->input('Address.zip_code', array('label' => 'CEP:', 'id' => 'zip_code', 'required'=>'required', 'onBlur' => 'getEndereco()'));                
 				echo $this->Form->input('Address.address', array('label' => 'Endereço:', 'id' => 'address', 'required'=>'required'));
@@ -33,7 +33,7 @@
 
 	<div class="right">
 		<fieldset id="dadosSponsor">
-			<legend>Dados do Sponsor</legend>
+			<legend class="legenda">Dados do Sponsor</legend>
 			<?php
 				echo $this->Form->input('Sponsor.name', array('label' => 'Nome:'));
 				echo $this->Form->input('Sponsor.phone', array('label' => 'Telefone:', 'id' => 'phone_sponsor'));
@@ -42,7 +42,7 @@
 		</fieldset>
 
 		<fieldset id="dadosFinanceiros">
-			<legend>Dados Financeiros</legend>
+			<legend class="legenda">Dados Financeiros</legend>
 			<?php
 				echo $this->Form->input('Financial.name', array('label' => 'Nome:'));
 				echo $this->Form->input('Financial.phone', array('label' => 'Telefone:', 'id' => 'phone_financial'));
@@ -51,7 +51,7 @@
 		</fieldset>
 
 		<fieldset id="dadosSepg">
-			<legend>Dados SEPG</legend>
+			<legend class="legenda">Dados SEPG</legend>
 			<?php
 				echo $this->Form->input('Sepg.name', array('label' => 'Nome:'));
 				echo $this->Form->input('Sepg.phone', array('label' => 'Telefone:', 'id' => 'phone_sepg'));
