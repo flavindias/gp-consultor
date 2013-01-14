@@ -92,10 +92,6 @@ th {
 	background: #CAE8EA;
 }
 
-img {
-	margin-top: 5px;
-}
-
 
 input{
 	width: 100%;
@@ -214,8 +210,14 @@ p span {
 	padding-bottom: 10px;
 }
 #botao_home_img{
-	margin-left:160px;
+	margin-left:95px;
 	margin-bottom:15px;
+	margin-top: 5px;
+}
+
+#logoSw{
+	margin-left:50px;
+	margin-top: 5px;
 }
 
 #bt-cadastrar{
@@ -472,11 +474,12 @@ p {
 }
 
 #actionsProject{
-	padding-left: 10px;
+	padding-left: 50px;
+	padding-top: 8px;
 }
 
 #tableProject{
-	width: 70%;
+	width: 100%;
 }
 
 #nameTableProject{

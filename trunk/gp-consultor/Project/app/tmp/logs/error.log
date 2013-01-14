@@ -1590,3 +1590,31 @@
 2013-01-14 17:22:26 Error: [MissingControllerException] Controller class JsController could not be found.
 #0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-14 20:41:55 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\site\sws\gp-consultor\Project\app\View\Layouts\includes\menu.php, line 2]
+2013-01-14 20:41:55 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 C:\site\sws\gp-consultor\Project\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\site\sws\gp-...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\site\sws\gp-...', 2, Array)
+#2 C:\site\sws\gp-consultor\Project\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\site\sws\gp-...', 2, Array)
+#3 C:\site\sws\gp-consultor\Project\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 20:41:56 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-14 20:41:56 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-14 20:42:14 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\site\sws\gp-consultor\Project\app\View\Layouts\includes\menu.php, line 2]
+2013-01-14 20:42:14 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 C:\site\sws\gp-consultor\Project\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\site\sws\gp-...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\site\sws\gp-...', 2, Array)
+#2 C:\site\sws\gp-consultor\Project\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\site\sws\gp-...', 2, Array)
+#3 C:\site\sws\gp-consultor\Project\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 20:42:14 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-14 20:42:14 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\site\sws\gp-consultor\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
