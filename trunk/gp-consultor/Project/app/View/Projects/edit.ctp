@@ -46,5 +46,5 @@
 				</fieldset>
 			</div>
 			
-			<?php echo $this->Form->end('ATUALIZAR'); ?>
+			<?php echo $this->Form->end('Atualizar'); ?>
 	
