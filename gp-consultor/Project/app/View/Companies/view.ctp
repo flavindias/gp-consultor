@@ -1,6 +1,4 @@
-<h1>
-		<?php echo $this->Html->image('company-logo.png', array('id'=>'companyLogo'))?> 
-		Empresa: <?php echo $company['Company']['name']; ?> 
+<h1> Consultor - <?php echo $company['Company']['name']; ?>
 		<?php echo $this->Html->link(
 $this->Html->image("edit.png", array("alt" => "Editar")),'edit/'.$company['Company']['id'],
 array('escape'=>false)) ?> 

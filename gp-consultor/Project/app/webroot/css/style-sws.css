@@ -299,24 +299,24 @@ p span {
 div.dadosEmpresa {
 	float: left;
 	width: 25%;
-	margin-left: 10%;
+	margin-left: 0%;
 	padding: 20px;
 	background-color: #bcdae0;
 }
 
 div.dadosEndereco {
-	margin-left: 40%;
+	margin-left: 30%;
 	width: 50%;
 	padding: 20px;
 	background-color: #bcdae0;
 }
 
 div.dadosSponsor, div.dadosFinancial, div.dadosSepg {
-	margin-top: 30px;
-	margin-left: 25%;
-	width: 65%;
+	margin-top: 33px;
+	margin-left: 18%;
+	width: 62%;
 	padding-top: 1px;
-	padding-bottom: 4px;
+	padding-bottom: 1px;
 	padding-right: 10px;
 	padding-left: 30px;
 	background-color: #bcdae0;
@@ -385,7 +385,7 @@ div.right {
 }
 
 p {
-	
+
 	font: 16px "Trebuchet MS", Verdana, Arial, Helvetica,
 	sans-serif;
 }
@@ -435,6 +435,10 @@ p {
 	border-color: #FFFFFF;
 	background-color: #bcdae0;
 
+}
+
+#integranteDefault, #integranteDefault2, #integranteDefault3{
+	margin-left: 0%;
 }
 
 /* =======================
@@ -491,6 +495,7 @@ p {
 }
 
 #titulo{
+	margin-left: -40px;	
 }
 
 #colorview{
@@ -547,11 +552,11 @@ p {
 	padding-left: 20px;
 	float: left;
 	border-width: 30px;
-	width: 950px;
+	width: 600px;
 	border: 30px;
 	border-color: #bcdae0;
 	background-color: #bcdae0;
-	margin-left: 0px;
+	margin-left: -40px;
 }
 
 
