@@ -6,7 +6,7 @@
 
     <div class="left">
         <fieldset id="dadosEmpresa">
-            <legend>Dados da Empresa</legend>
+            <legend class="legenda">Dados da Empresa</legend>
             <?php
                 echo $this->Form->input('id', array('type' => 'hidden'));
                 echo $this->Form->input('name', array('label' => 'Nome da empresa:', 'required'=>'required'));
@@ -18,7 +18,7 @@
         </fieldset>
         
         <fieldset id="dadosEndereco">
-            <legend>Endereço</legend>
+            <legend class="legenda">Endereço</legend>
             <?php
                 echo $this->Form->input('Address.id', array('type' => 'hidden'));
 				echo $this->Form->input('Address.zip_code', array('label' => 'CEP:', 'id' => 'zip_code'));  
@@ -34,7 +34,7 @@
 
     <div class="right">
         <fieldset id="dadosSponsor">
-            <legend>Dados do Sponsor</legend>
+            <legend class="legenda">Dados do Sponsor</legend>
             <?php
                 echo $this->Form->input('Sponsor.id', array('type' => 'hidden'));
                 echo $this->Form->input('Sponsor.name', array('label' => 'Nome:'));
@@ -44,7 +44,7 @@
         </fieldset>
 
         <fieldset id="dadosFinanceiros">
-            <legend>Dados Financeiros</legend>
+            <legend class="legenda">Dados Financeiros</legend>
             <?php
                 echo $this->Form->input('Financial.id', array('type' => 'hidden'));
                 echo $this->Form->input('Financial.name', array('label' => 'Nome:'));
@@ -54,7 +54,7 @@
         </fieldset>
 
         <fieldset id="dadosSepg">
-            <legend>Dados SEPG</legend>
+            <legend class="legenda">Dados SEPG</legend>
             <?php
                 echo $this->Form->input('Sepg.id', array('type' => 'hidden'));
                 echo $this->Form->input('Sepg.name', array('label' => 'Nome:'));
