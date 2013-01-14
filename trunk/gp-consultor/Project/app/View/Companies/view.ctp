@@ -65,7 +65,7 @@ array('escape'=>false),"Você quer excluir realmente ?");?>
 	</div>
 
 	<div class='dadosSponsor'>
-		<h2>Sponsor</h2>
+		<h2 class="tituloCompanyView">Sponsor</h2>
 
 		<p><?php 
 			echo 'Nome: ';
@@ -87,7 +87,7 @@ array('escape'=>false),"Você quer excluir realmente ?");?>
 	</div>
 
 	<div class='dadosFinancial'>
-		<h2>Financeiro</h2>
+		<h2 class="tituloCompanyView">Financeiro</h2>
 
 		<p><?php 
 			echo 'Nome: ';
@@ -109,7 +109,7 @@ array('escape'=>false),"Você quer excluir realmente ?");?>
 	</div>
 
 	<div class='dadosSepg'>
-		<h2>SEPG</h2>
+		<h2 class="tituloCompanyView">SEPG</h2>
 		
 		<p><?php 
 			echo 'Nome: ';
