@@ -4,7 +4,7 @@
  <?php echo $this->Form->create('Consultant', array('action' => 'edit')); ?>
  			<div class="left" >
 			<fieldset id="dados_pessoais">
-				<legend>Dados Pessoais</legend>
+				<legend class="legenda">Dados Pessoais</legend>
 					<?php echo $this->Form->input('Consultant.id', array('type' => 'hidden')); ?>
 					<?php echo $this->Form->input('Consultant.name', array('label' => 'Nome: ','placeholder'=>'', 'id'=>'name')); ?>
 					<?php echo $this->Form->input('Consultant.cpf', array('label' => 'CPF: ','placeholder'=>'', 'id'=>'cpf')); ?>
@@ -17,7 +17,7 @@
 			</div>
 			<div class="right">
 			<fieldset id="endereço">
-				<legend>Endereço</legend>
+				<legend class="legenda">Endereço</legend>
 					<?php echo $this->Form->input('Address.id', array('type' => 'hidden')); ?>
 					<?php echo $this->Form->input('Address.address', array('label' => 'Endereço: ','required'=>'required', 'id'=>'address')); ?>
 					<?php echo $this->Form->input('Address.number', array('label' => 'Número: ','required'=>'required')); ?>

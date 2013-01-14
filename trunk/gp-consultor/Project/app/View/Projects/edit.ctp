@@ -4,7 +4,7 @@
 		echo $this->Form->create('Project', array('action' => 'edit')); ?>
 			<div>
 				<fieldset id="dados_projeto">
-					<legend>Dados do Projeto</legend>
+					<legend class="legenda">Dados do Projeto</legend>
 					
 					<?php 
 					
@@ -36,7 +36,7 @@
 						
 				</fieldset>
 				<fieldset id="horas">
-					<legend>Horas</legend>
+					<legend class="legenda">Horas</legend>
 					<?php echo $this->Form->input('Project.a_hours', array('min'=>"1", 'max'=>"5",'label' => 'Horas A: ','required'=>'required','id'=>'hora_a',)); ?>
 						
 					<?php echo $this->Form->input('Project.b_hours', array('min'=>"1", 'max'=>"5",'label' => 'Horas B: ', 'id'=>'hora_b')); ?>

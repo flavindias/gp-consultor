@@ -2,9 +2,9 @@
 
 <div class="projectindex">
 
-	<table cellpadding="0" cellspacing="0">
+	<table id="tableProject" cellpadding="0" cellspacing="0">
 		<tr>
-			<th>Nome</th>
+			<th id="nameProject">Nome</th>
 			<th>Abreviação</th>
 			<th class="actions">Ações</th>
 		</tr>
@@ -25,9 +25,8 @@
 		?>
 
 		<tr <?php echo $class; ?>>
-			<td class="nome"><?php echo $project['Project']['name']; ?></td>
+			<td id="nameTableProject"><?php echo $project['Project']['name']; ?></td>
 			<td class="sigla"><?php echo $project['Project']['acronym']; ?></td>
-			<div id="actionsProject">
 			<td>
 				<div id="actionsProject">
 					<?php echo $this->Html->link(
