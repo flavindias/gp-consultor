@@ -296,6 +296,10 @@ p span {
 ==========================
 ==========================*/
 
+.tituloCompanyView{
+	color: #008B8B; 
+}
+
 
 div.dadosEmpresa {
 	float: left;
@@ -491,7 +495,7 @@ p {
 }
 
 #titulodados, #tituloendereco{
-	color: #333333;
+	color: #008B8B;
 	text-align: center;
 }
 
