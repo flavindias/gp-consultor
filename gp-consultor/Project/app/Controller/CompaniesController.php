@@ -18,13 +18,15 @@ class CompaniesController extends AppController {
 
 		if($this->request->is('post')){
 			if($this->Company->saveAll($this->request->data)){
-				$this->Session->setFlash('Empresa cadastrada com sucesso!');
+				$this->Session->setFlash($this->flashSuccess('Empresa cadastrada com sucesso!'));
 				$this->redirect(array('action' => 'index'));
-				 
+			}
+			else{
+				$this->Session->setFlash($this->flashError('Erro ao cadastrar empresa!'));
 			}
 		}
 		else{			
-			$this->Session->setFlash('A empresa n�o foi cadastrada. Tente novamente!');			
+			$this->Session->setFlash($this->Session->setFlash($this->flashError('A empresa não foi cadastrada. Tente novamente!')));			
 		}
 		
 	}
@@ -50,28 +52,20 @@ class CompaniesController extends AppController {
 			else {
 				$this->Company->id = $id;
 
-		if ($this->Company->saveAll($this->request->data)) {
-
-			$this->Session->setFlash('Empresa atualizada!');
-			$this->redirect(array('action' => 'index'));
-			}
-		}
+				if ($this->Company->saveAll($this->request->data)) {
+					$this->Session->setFlash($this->flashSuccess('Empresa atualizada!'));
+					$this->redirect(array('action' => 'index'));
+					}
+				}
 	}
 
 	
 	
 	public function delete($id = NULL){
-		
 		$this->Company->id = $id;
-		#$this->layout = 'DeleteCompany';
-		
-		
 		$this->Company->saveField('removed',1);
-		
-		$this->Session->setFlash('Empresa removida com sucesso!');
-		
+		$this->Session->setFlash($this->flashSuccess('Empresa removida com sucesso!'));
 		$this->redirect('/Companies');
-		
 	}
 	
 
