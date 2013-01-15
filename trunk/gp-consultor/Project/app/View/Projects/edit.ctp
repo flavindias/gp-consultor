@@ -4,14 +4,16 @@
 		echo $this->Form->create('Project', array('action' => 'edit')); ?>
 			<div>
 				<fieldset id="dados_projeto">
-					<legend class="legenda">Dados do Projeto</legend>
+					<legend>Dados do Projeto</legend>
 					
 					<?php 
 					
 						foreach ($projects as $project) 
 							{
-								if( $project['Project']['id'] != $this->data['Project']['id'] ){
-									$list_projects[$project['Project']['id']] =$project['Project']['name'];
+								if( $project['Project']['company_id'] != $this->data['Project']['id'] ){
+									if( $project['Project']['id'] != $this->data['Project']['id'] ){
+										$list_projects[$project['Project']['id']] =$project['Project']['name'];
+									}
 								}
 							};
 					
@@ -36,7 +38,7 @@
 						
 				</fieldset>
 				<fieldset id="horas">
-					<legend class="legenda">Horas</legend>
+					<legend>Horas</legend>
 					<?php echo $this->Form->input('Project.a_hours', array('min'=>"1", 'max'=>"5",'label' => 'Horas A: ','required'=>'required','id'=>'hora_a',)); ?>
 						
 					<?php echo $this->Form->input('Project.b_hours', array('min'=>"1", 'max'=>"5",'label' => 'Horas B: ', 'id'=>'hora_b')); ?>
