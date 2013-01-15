@@ -25,7 +25,7 @@
 		<p><span>Hora A: </span><?php echo $project['Project']['a_hours']; ?> hrs</span></p>
 		<p><span>Hora B: </span><?php echo $project['Project']['b_hours']; ?> hrs</p>
 		<p><span>Hora C: </span><?php echo $project['Project']['c_hours']; ?> hrs</p>
-		<p><span>Projeto Pai: </span><?php echo $project['Project']['parent_project_id']; ?></p>
+		<p><span>Projeto Pai: </span><?php echo $nameProjectFather; ?></p>
 		<p><span>Empresa: </span><?php echo $nameCompany; ?>
 		<?php echo $this->Html->link(
 					$this->Html->image("view.png", array('alt' => 'Ver')), array('action' => '../companies/view', $project['Project']['company_id']), array('escape'=>false, 'id'=>'link'))?>

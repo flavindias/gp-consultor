@@ -16,13 +16,21 @@
 		$this->set('title_for_layout', 'Projetos');
  		$this -> layout = 'index';
  		$this -> set ('projects', $this-> Project->find('all', array('conditions'=> array('Project.removed !=' => 1))));
+ 		$this-> set ('companies',$this->Project->Company->find('all', array('conditions'=> array('Company.id =' => 'Project.company_id'))));		 
  	}
  	
  	public function add(){
  		$this->layout = 'base';
+ 		
  		if($this->request->is('post')){
- 			if($this->Project->saveAll($this->request->data)){
-           		$this->redirect(array('action' => 'index'));
+ 			if ($this->existe($this->request->data['Project']['name'],$this->request->data['Project']['company_id'])){
+	 			if($this->Project->saveAll($this->request->data)){
+	           		$this->redirect(array('action' => 'index'));
+	 			}
+ 			}
+ 			else {
+ 				$this->Session->setFlash('Projeto ja existe no banco de dados. Favor tentar novamente.');
+				$this->redirect(array('action'=>'add'));
  			}
  		}
  		else{
@@ -76,15 +84,32 @@
             throw new NotFoundException(__('Invalid post'));
         }
         
-        $nameCompany = $this->GetNameCompany($Projects['Project']['company_id']);
-        $this -> set('nameCompany', $nameCompany);
+        $this -> set('nameCompany', $this->GetNameCompany($Projects['Project']['company_id']));
+        $this -> set('nameProjectFather', $this->GetNameProjectFather($Projects['Project']['parent_project_id']));
         $this ->set('project',$Projects);
  	}
+ 	
  	
  	private function GetNameCompany($id){
  		$name = $this->Project->Company->findById($id);
  		return $name['Company']['name'];
  		
  	}
+ 	private function GetNameProjectFather($id){
+ 		$name = $this->Project->findById($id);
+ 		return $name['Project']['name'];
+ 		
+ 	}
+ 	
+ 	private function exist($nome, $idEmpresa){
+		$foundProject = $this->Project->find('first',array('conditions'=> array('Project.name =' => $nome,'Project.company_id =' => $idEmpresa)));
+		if (count($foundProject) == 0){
+			return true;
+		}
+		
+		else{
+			return false;
+		}
+	}
  }
 ?>
