@@ -10,7 +10,7 @@
 					
 						foreach ($projects as $project) 
 							{
-								if( $project['Project']['company_id'] != $this->data['Project']['id'] ){
+								if( $project['Project']['parent_project_id'] != $this->data['Project']['id'] ){
 									if( $project['Project']['id'] != $this->data['Project']['id'] ){
 										$list_projects[$project['Project']['id']] =$project['Project']['name'];
 									}
