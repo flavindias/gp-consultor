@@ -13,6 +13,7 @@
 	    <?php echo $this->Html->script('aplicacao'); ?>
 	</head>
 <body> 
+	<?php echo $this->Session->flash(); ?>
 	<?php include 'includes/menu.php' ?>
 	<h1>Sws - Agenda</h1>
 	

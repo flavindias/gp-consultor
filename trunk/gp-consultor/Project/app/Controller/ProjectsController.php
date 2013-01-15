@@ -23,13 +23,13 @@
  		$this->layout = 'base';
  		
  		if($this->request->is('post')){
- 			if ($this->existe($this->request->data['Project']['name'],$this->request->data['Project']['company_id'])){
+ 			if ($this->exist($this->request->data['Project']['name'],$this->request->data['Project']['company_id'])){
 	 			if($this->Project->saveAll($this->request->data)){
 	           		$this->redirect(array('action' => 'index'));
 	 			}
  			}
  			else {
- 				$this->Session->setFlash('Projeto ja existe no banco de dados. Favor tentar novamente.');
+ 				$this->Session->setFlash($this->flashError('Projeto ja existe no banco de dados. Favor tentar novamente.'));
 				$this->redirect(array('action'=>'add'));
  			}
  		}
@@ -66,7 +66,7 @@
 	public function delete($id = NULL){
 		$this->Project->id = $id;
 		if($this->Project->saveField("removed", "true")){
-			$this->Session->setFlash('O consultor foi deletado.');
+			$this->Session->setFlash($this->flashSuccess('Projeto excluido com sucesso!'));
 			$this->redirect(array('action' => 'index'));
 		}
 	}

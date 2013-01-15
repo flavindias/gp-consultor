@@ -32,4 +32,18 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	//funções para flash alerta,successo,
+	
+	public function flashSuccess($msg){
+		return '<div class="success flash">'.$msg.'</div>';
+	}
+	public function flashWarning($msg){
+		return '<div class="warning flash">'.$msg.'</div>';
+	}
+	public function flashError($msg){
+		return '<div class="error flash">'.$msg.'</div>';
+	}
+	public function flashInfo($msg){
+		return '<div class="info flash">'.$msg.'</div>';
+	}
 }

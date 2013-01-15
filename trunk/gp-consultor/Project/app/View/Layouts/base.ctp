@@ -15,6 +15,7 @@
 	<?php echo $this->Html->script('aplicacao'); ?>
 </head>
 <body>
+	<?php echo $this->Session->flash(); ?>
 	<?php include 'includes/menu.php' ?>
 	
 	<div class="conteudo">

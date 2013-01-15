@@ -12,6 +12,7 @@
     </head>
 
     <body>
+    	<?php echo $this->Session->flash(); ?>
 
         <div id="bt-cadastrar">
             <?php echo $this->Html->link("Cadastrar", array('action' => 'add'),array('class'=>'botao')); ?>
