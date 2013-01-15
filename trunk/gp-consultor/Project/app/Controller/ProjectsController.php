@@ -25,6 +25,7 @@
  		if($this->request->is('post')){
  			if ($this->exist($this->request->data['Project']['name'],$this->request->data['Project']['company_id'])){
 	 			if($this->Project->saveAll($this->request->data)){
+	 				$this->Session->setFlash($this->flashSuccess('Projeto adicionado com sucesso.'));
 	           		$this->redirect(array('action' => 'index'));
 	 			}
  			}
@@ -58,7 +59,11 @@
 		else{
 			$this->Project->id = $id;
 			if ($this->Project->saveAll($this->request->data)) {
+				$this->Session->setFlash($this->flashSuccess('Projeto editado com sucesso.'));
 				$this->redirect(array('action' => 'index'));
+			}
+			else{
+				$this->Session->setFlash($this->flashError('Erro ao editar projeto.'));
 			}
 		}
 	}
@@ -68,6 +73,9 @@
 		if($this->Project->saveField("removed", "true")){
 			$this->Session->setFlash($this->flashSuccess('Projeto excluido com sucesso!'));
 			$this->redirect(array('action' => 'index'));
+		}
+		else {
+			$this->Session->setFlash($this->flashError('Erro ao excluir projeto.'));
 		}
 	}
  	
