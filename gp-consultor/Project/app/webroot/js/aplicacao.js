@@ -82,6 +82,12 @@ $('document').ready(function(){
 	
 });
 
+setTimeout(
+		function() {
+			$('.flash').fadeOut('fast');
+			}, 
+		4000);
+//Checar se abreviação já é utilizada
 function checkAcronym(src){
 	d = src;
 	var acronym = $(d).val();
