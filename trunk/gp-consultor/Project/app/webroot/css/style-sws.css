@@ -517,12 +517,22 @@ p {
 
 
 .sigla{
-	width: 180px;
+	width: 70px;
+	height: 10px;
+}
+
+.horas{
+	width: 50px;
+}
+
+.empresa{
+	width: 100px;
 }
 
 #actionsProject{
-	padding-left: 50px;
-	padding-top: 8px;
+	width: 60px;
+	padding-left: 40px;
+	height: 10px;
 }
 
 #tableProject{
@@ -531,6 +541,7 @@ p {
 
 #nameTableProject{
 	width: 270px;
+	height: 10px;
 }
 
 #viewProject{
