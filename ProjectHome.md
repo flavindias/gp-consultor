@@ -1,0 +1,1 @@
+Pequeno projeto para ter noção de conhecimentos da disciplina de Processo coordenado pela turma de Gerência da UFRPE do curso de BSI.
